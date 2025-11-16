@@ -1,126 +1,134 @@
-// -----------------------------
-// Mobile Menu Toggle
-// -----------------------------
-const menuBtn = document.querySelector('.menu-btn');
-const nav = document.querySelector('.navbar');
+// =====================================
+// MOBILE MENU TOGGLE
+// =====================================
+const menuBtn = document.querySelector(".menu-btn");
+const nav = document.querySelector(".main-nav");
 
 if (menuBtn && nav) {
-    menuBtn.addEventListener('click', () => {
-        nav.classList.toggle('active');
-        menuBtn.classList.toggle('active');
-    });
+  menuBtn.addEventListener("click", () => {
+    nav.classList.toggle("active");
+    menuBtn.classList.toggle("active");
+  });
 }
 
-// -----------------------------
-// Sticky Header on Scroll
-// -----------------------------
-const header = document.querySelector("header");
-window.addEventListener("scroll", () => {
-    if (header) {
-        header.classList.toggle("sticky", window.scrollY > 50);
-    }
-});
+// =====================================
+// STICKY HEADER ON SCROLL
+// =====================================
+const header = document.querySelector("header") || document.querySelector(".site-header");
 
-// -----------------------------
-// Auto Carousel + Fade + Swipe
-// -----------------------------
-let slideIndex = 0;
-const slides = document.querySelectorAll('.hero-slide');
-let carouselContainer = document.querySelector('.hero-carousel');
-let startX = 0;
-
-function showSlides() {
-    if (slides.length === 0) return;
-
-    slides.forEach(slide => slide.style.opacity = 0);
-
-    slideIndex++;
-    if (slideIndex > slides.length) slideIndex = 1;
-
-    slides[slideIndex - 1].style.opacity = 1;
-
-    setTimeout(showSlides, 4000); 
+if (header) {
+  window.addEventListener("scroll", () => {
+    header.classList.toggle("sticky", window.scrollY > 50);
+  });
 }
 
-if (slides.length > 0) {
-    slides.forEach(slide => {
-        slide.style.transition = "opacity 1s ease";
-    });
-    showSlides();
+// =====================================
+// HERO CAROUSEL (TOP SLIDES)
+// =====================================
+const heroSlides = document.querySelectorAll(".hero-carousel .slide");
+let heroIndex = 0;
+
+function showHeroSlide() {
+  if (!heroSlides.length) return;
+
+  heroSlides.forEach(slide => (slide.classList.remove("active")));
+  heroIndex++;
+  if (heroIndex > heroSlides.length) heroIndex = 1;
+
+  heroSlides[heroIndex - 1].classList.add("active");
 }
 
-// Swipe gestures for mobile:
-if (carouselContainer) {
-    carouselContainer.addEventListener("touchstart", e => {
-        startX = e.touches[0].clientX;
-    });
-
-    carouselContainer.addEventListener("touchend", e => {
-        let endX = e.changedTouches[0].clientX;
-
-        if (endX < startX - 50) {
-            slideIndex++;
-            if (slideIndex > slides.length) slideIndex = 1;
-        } else if (endX > startX + 50) {
-            slideIndex--;
-            if (slideIndex < 1) slideIndex = slides.length;
-        }
-
-        slides.forEach(slide => slide.style.opacity = 0);
-        slides[slideIndex - 1].style.opacity = 1;
-    });
+if (heroSlides.length) {
+  heroSlides[0].classList.add("active");
+  setInterval(showHeroSlide, 4000);
 }
 
-// -----------------------------
-// Smooth Scroll
-// -----------------------------
+// =====================================
+// TESTIMONIAL CAROUSEL
+// =====================================
+const testimonialTrack = document.querySelector(".testimonial-track");
+const testimonialSlides = document.querySelectorAll(".testimonial-slide");
+const testimonialDots = document.querySelectorAll(".testimonial-dot");
+let testimonialIndex = 0;
+
+function updateTestimonials() {
+  if (!testimonialTrack || !testimonialSlides.length) return;
+
+  testimonialTrack.style.transform = `translateX(-${testimonialIndex * 100}%)`;
+
+  if (testimonialDots.length) {
+    testimonialDots.forEach(dot => dot.classList.remove("active"));
+    testimonialDots[testimonialIndex].classList.add("active");
+  }
+}
+
+if (testimonialSlides.length) {
+  updateTestimonials();
+  setInterval(() => {
+    testimonialIndex = (testimonialIndex + 1) % testimonialSlides.length;
+    updateTestimonials();
+  }, 4500);
+
+  testimonialDots.forEach((dot, idx) => {
+    dot.addEventListener("click", () => {
+      testimonialIndex = idx;
+      updateTestimonials();
+    });
+  });
+}
+
+// =====================================
+// SMOOTH SCROLL FOR INTERNAL LINKS
+// =====================================
 document.querySelectorAll('a[href^="#"]').forEach(link => {
-    link.addEventListener('click', (e) => {
-        const target = document.querySelector(link.getAttribute('href'));
-
-        if (target) {
-            e.preventDefault();
-            target.scrollIntoView({ behavior: 'smooth' });
-        }
-    });
+  link.addEventListener("click", e => {
+    const target = document.querySelector(link.getAttribute("href"));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: "smooth" });
+    }
+  });
 });
 
-// -----------------------------
-// Toast Order Button
-// -----------------------------
-document.querySelectorAll('.order-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-        window.location.href = "https://order.toasttab.com/online/bobby-burrito";
-    });
+// =====================================
+// TOAST ORDER BUTTONS
+// =====================================
+document.querySelectorAll(".order-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    window.location.href = "https://order.toasttab.com/online/bobby-burrito";
+  });
 });
 
-// -----------------------------
-// Fade-in Animation on Scroll
-// -----------------------------
-const faders = document.querySelectorAll('.fade-in');
+// =====================================
+// FADE-IN ON SCROLL
+// =====================================
+const faders = document.querySelectorAll(".fade-in");
 
-const appearOptions = {
+if ("IntersectionObserver" in window && faders.length) {
+  const appearOptions = {
     threshold: 0.2,
-    rootMargin: "0px 0px -50px 0px"
-};
+    rootMargin: "0px 0px -40px 0px",
+  };
 
-const appearOnScroll = new IntersectionObserver((entries) => {
+  const appearOnScroll = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add("visible");
-        appearOnScroll.unobserve(entry.target);
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("visible");
+      observer.unobserve(entry.target);
     });
-}, appearOptions);
+  }, appearOptions);
 
-faders.forEach(fader => appearOnScroll.observe(fader));
+  faders.forEach(fader => appearOnScroll.observe(fader));
+}
 
-// -----------------------------
-// Form Success Popup
-// -----------------------------
+// =====================================
+// SIMPLE FORM SUBMIT ALERT
+// (Netlify handles actual submission)
+// =====================================
 document.querySelectorAll("form").forEach(form => {
-    form.addEventListener("submit", () => {
-        setTimeout(() => {
-            alert("Thank you! Your request has been submitted successfully.");
-        }, 300);
-    });
+  form.addEventListener("submit", () => {
+    setTimeout(() => {
+      alert("Thank you! Your request has been submitted.");
+    }, 300);
+  });
 });
