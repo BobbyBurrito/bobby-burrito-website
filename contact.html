@@ -83,19 +83,23 @@
     <div class="container">
       <h2 class="section-title">Feedback & Questions</h2>
       <p>Share your experience or ask us anything about the menu, allergens or catering.</p>
-      <form name="feedback" method="POST" data-netlify="true" class="catering-form">
-        <input type="hidden" name="form-name" value="feedback" />
-        <label>Name:</label>
-        <input type="text" name="name" />
+    <form name="contact" method="POST" data-netlify="true">
+  <input type="hidden" name="form-name" value="contact">
 
-        <label>Email:</label>
-        <input type="email" name="email" required />
+  <label>Your Name</label>
+  <input type="text" name="name" required>
 
-        <label>Your message:</label>
-        <textarea name="message" rows="5" required></textarea>
+  <label>Your Email</label>
+  <input type="email" name="email" required>
 
-        <button type="submit">Send Feedback</button>
-      </form>
+  <label>Your Phone</label>
+  <input type="text" name="phone" required>
+
+  <label>Your Message</label>
+  <textarea name="message" required></textarea>
+
+  <button type="submit">Send Message</button>
+</form>
     </div>
   </section>
 </main>
