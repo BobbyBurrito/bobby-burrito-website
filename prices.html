@@ -1,43 +1,249 @@
 <!DOCTYPE html>
-<html><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1'>
-<title>Menu Prices</title><link rel='stylesheet' href='assets/style.css'>
-</head><body>
-<h1 class='section-title'>Full Menu & Prices</h1>
-<section class='section'><div class='container'>
-<h2>Burritos</h2>
-<ul>
-<li>Regular: 9.29</li><li>Large: 9.29 + 2.69</li><li>Extra Large: 9.29 + 4.68</li><li>Upgrade proteins: +0.69</li>
-<li>Extra Protein: +3.99</li>
-</ul>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Prices – Bobby Burrito & Taco</title>
 
-<h2>Burrito Bowls</h2>
-<ul><li>Regular: 9.99</li><li>Large: +2.39</li></ul>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="View pricing for burritos, bowls, tacos, quesadillas, nachos, sides & desserts. Simple and transparent pricing for all items.">
 
-<h2>Quesadillas</h2>
-<ul><li>Regular: 10.39</li><li>Large: +1.99</li></ul>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
 
-<h2>Salad</h2>
-<ul>
-<li>Protein: 10.59</li><li>Veg: 8.99</li><li>Vegan: 10.59</li>
-</ul>
+<body>
 
-<h2>Nacho Bowls</h2>
-<ul><li>Protein: 12.39</li><li>Veg: 11.99</li><li>Vegan: 12.39</li></ul>
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <img src="assets/images/logo.jpg" alt="Logo" class="brand-logo">
+      <span class="brand-text">Bobby Burrito & Taco</span>
+    </div>
 
-<h2>Beef Chili</h2><ul><li>Regular 2.99</li><li>Large 3.99</li></ul>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="prices.html" class="full-menu-link">Prices</a>
+      <a href="deals.html">Deals</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="catering.html">Catering</a>
+      <a href="giftcards.html">Gift Cards</a>
+      <a href="loyalty.html">Loyalty</a>
+      <a href="order.html" class="full-menu-link">Order Pickup</a>
+    </nav>
 
-<h2>3-Tacos</h2>
-<ul><li>Protein: 11.99</li><li>Vegetarian: 11.59</li><li>Vegan: 11.99</li></ul>
+    <div class="menu-btn"><div></div><div></div><div></div></div>
+  </div>
+</header>
 
-<h2>Kids Combo</h2><ul><li>7.99</li></ul>
+<!-- HERO -->
+<section class="hero fade-in">
+  <picture>
+    <source srcset="assets/images/hero-mobile.jpg" media="(max-width: 768px)">
+    <img src="assets/images/hero-desktop.jpg" class="hero-img" alt="Menu Pricing">
+  </picture>
 
-<h2>Sides</h2>
-<ul><li>Bag of chips: 1.99</li><li>Chips & Salsa: 2.99</li><li>Chips & Queso: 3.49</li><li>Chips & Guac: 3.99</li></ul>
+  <div class="hero-overlay">
+    <div class="container hero-content">
+      <div class="hero-tag">Menu Prices</div>
+      <h1>Fresh, Affordable & Fully Customizable</h1>
+      <p class="tagline">Build it your way — every item made fresh daily.</p>
+      <a href="order.html" class="btn btn-menu">Order Pickup</a>
+    </div>
+  </div>
+</section>
 
-<h2>Desserts</h2>
-<ul><li>Brownie: 2.99</li><li>Churro: 2.99</li></ul>
+<!-- PRICE GRID -->
+<section class="section fade-in">
+  <div class="container">
+    <h2 class="section-title">Prices</h2>
 
-<h2>Drinks</h2>
-<ul><li>Can/Fountain: 1.99</li><li>Bottle/Jarritos: 2.99</li><li>Pure Leaf: 3.59</li></ul>
-</div></section>
-</body></html>
+    <!-- BURRITOS -->
+    <h3 id="burritos">🌯 Burritos</h3>
+    <div class="menu-highlight-grid">
+
+      <article class="menu-highlight-card">
+        <img src="assets/images/burrito.jpg" alt="">
+        <div class="menu-highlight-card-inner">
+          <h3>Regular</h3>
+          <p><strong>$7.99</strong></p>
+        </div>
+      </article>
+
+      <article class="menu-highlight-card">
+        <img src="assets/images/burrito.jpg" alt="">
+        <div class="menu-highlight-card-inner">
+          <h3>Large</h3>
+          <p><strong>$9.99</strong></p>
+        </div>
+      </article>
+
+      <article class="menu-highlight-card">
+        <img src="assets/images/burrito.jpg" alt="">
+        <div class="menu-highlight-card-inner">
+          <h3>Extra Large</h3>
+          <p><strong>$11.99</strong></p>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- BOWLS -->
+    <h3 id="bowls">🥗 Burrito Bowls</h3>
+    <div class="menu-highlight-grid">
+
+      <article class="menu-highlight-card">
+        <img src="assets/images/burrito-bowl.jpg" alt="">
+        <div class="menu-highlight-card-inner">
+          <h3>Regular Bowl</h3>
+          <p><strong>$9.49</strong></p>
+        </div>
+      </article>
+
+      <article class="menu-highlight-card">
+        <img src="assets/images/burrito-bowl.jpg" alt="">
+        <div class="menu-highlight-card-inner">
+          <h3>Large Bowl</h3>
+          <p><strong>$11.49</strong></p>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- TACOS -->
+    <h3 id="tacos">🌮 Tacos</h3>
+    <div class="menu-highlight-grid">
+
+      <article class="menu-highlight-card">
+        <img src="assets/images/taco-3.jpg" alt="">
+        <div class="menu-highlight-card-inner">
+          <h3>3-Taco Combo</h3>
+          <p><strong>$7.99</strong></p>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- QUESADILLAS -->
+    <h3 id="quesadillas">🧀 Quesadillas</h3>
+    <div class="menu-highlight-grid">
+
+      <article class="menu-highlight-card">
+        <img src="assets/images/quesadilla.jpg" alt="">
+        <div class="menu-highlight-card-inner">
+          <h3>Regular Quesadilla</h3>
+          <p><strong>$8.49</strong></p>
+        </div>
+      </article>
+
+      <article class="menu-highlight-card">
+        <img src="assets/images/quesadilla.jpg" alt="">
+        <div class="menu-highlight-card-inner">
+          <h3>Large Quesadilla</h3>
+          <p><strong>$10.49</strong></p>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- NACHO BOWL -->
+    <h3 id="nachos">🧀 Nacho Bowl</h3>
+    <div class="menu-highlight-grid">
+      <article class="menu-highlight-card">
+        <img src="assets/images/nacho-bowl.jpg" alt="">
+        <div class="menu-highlight-card-inner">
+          <h3>Loaded Nacho Bowl</h3>
+          <p><strong>$8.99</strong></p>
+        </div>
+      </article>
+    </div>
+
+    <!-- SIDES -->
+    <h3 id="sides">🍟 Sides</h3>
+    <div class="menu-highlight-grid">
+
+      <article class="menu-highlight-card">
+        <img src="assets/images/beef-chili.jpg" alt="">
+        <div class="menu-highlight-card-inner">
+          <h3>Small Beef Chili</h3>
+          <p><strong>$2.99</strong></p>
+        </div>
+      </article>
+
+      <article class="menu-highlight-card">
+        <img src="assets/images/chips-queso.jpg" alt="">
+        <div class="menu-highlight-card-inner">
+          <h3>Chips & Queso</h3>
+          <p><strong>$4.49</strong></p>
+        </div>
+      </article>
+
+      <article class="menu-highlight-card">
+        <img src="assets/images/chips-salsa-queso.jpg" alt="">
+        <div class="menu-highlight-card-inner">
+          <h3>Chips, Salsa & Queso</h3>
+          <p><strong>$5.49</strong></p>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- DESSERTS -->
+    <h3 id="dessert">🍰 Desserts</h3>
+    <div class="menu-highlight-grid">
+
+      <article class="menu-highlight-card">
+        <img src="assets/images/churro.jpg" alt="">
+        <div class="menu-highlight-card-inner">
+          <h3>Churros</h3>
+          <p><strong>$3.49</strong></p>
+        </div>
+      </article>
+
+      <article class="menu-highlight-card">
+        <img src="assets/images/brownie.jpg" alt="">
+        <div class="menu-highlight-card-inner">
+          <h3>Chocolate Brownie</h3>
+          <p><strong>$3.99</strong></p>
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+
+    <div>
+      <h4>Bobby Burrito & Taco</h4>
+      <p>3580 Tecumseh Rd E<br>Windsor, ON</p>
+      <p><strong>Phone:</strong> <a href="tel:15199158488">519-915-8488</a></p>
+    </div>
+
+    <div>
+      <h4>Hours</h4>
+      <p>Mon–Sat: 11 AM – 9 PM<br>Sun: 11 AM – 8 PM</p>
+    </div>
+
+    <div>
+      <h4>Follow Us</h4>
+      <p>
+        <a href="https://www.instagram.com/bobby_burrito_taco">@bobby_burrito_taco</a><br>
+        <a href="#">Facebook</a>
+      </p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 Bobby Burrito & Taco — All rights reserved.
+  </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>
