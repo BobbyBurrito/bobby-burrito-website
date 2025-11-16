@@ -2,142 +2,207 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Bobby Burrito & Taco – Fresh Mexican in Windsor</title>
-  
-<meta name="keywords" content="Mexican restaurant Windsor, tacos Windsor, burritos Windsor, Bobby Burrito & Taco, Windsor food, Windsor takeout, Mexican food Ontario">
-<meta name="author" content="Bobby Burrito & Taco">
-<link rel="canonical" href="https://www.bobbyburrito.ca/">
+  <title>Menu – Bobby Burrito & Taco</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Family-owned Mexican restaurant in Windsor serving burritos, bowls, tacos, quesadillas, nachos and more. Order pickup online or by phone.">
-  <link rel="stylesheet" href="assets/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore our full menu: burritos, bowls, tacos, quesadillas, nachos, sides & desserts. Pick your protein and build it your way.">
+
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
+
+<!-- HEADER -->
 <header class="site-header">
-  <div class="top-banner">
-    <span>🌮 Taco Tuesday: Buy 2 Tacos, Get 1 FREE (Tuesdays only!)</span>
-  </div>
-  <div class="header-inner container">
-    <a class="brand" href="index.html">
-      <img src="assets/img/logo.jpg" alt="Bobby Burrito & Taco logo" class="brand-logo" />
-      <span class="brand-text">Bobby Burrito &amp; Taco</span>
-    </a>
+  <div class="header-inner">
+    <div class="brand">
+      <img src="assets/images/logo.jpg" alt="Bobby Burrito Logo" class="brand-logo">
+      <span class="brand-text">Bobby Burrito & Taco</span>
+    </div>
+
     <nav class="main-nav">
       <a href="index.html">Home</a>
-      <a href="menu.html">Menu</a>
+      <a href="menu.html" class="full-menu-link">Menu</a>
+      <a href="prices.html">Prices</a>
       <a href="deals.html">Deals</a>
       <a href="gallery.html">Gallery</a>
       <a href="catering.html">Catering</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <a href="order.html" class="btn btn-small">Order Pickup</a>
-    <a href="loyalty.html">Loyalty</a><a href="giftcards.html">Gift Cards</a><a href='prices.html'>Menu Pricing</a></nav>
+      <a href="giftcards.html">Gift Cards</a>
+      <a href="loyalty.html">Loyalty</a>
+      <a href="order.html" class="full-menu-link">Order Pickup</a>
+    </nav>
+
+    <div class="menu-btn">
+      <div></div><div></div><div></div>
+    </div>
   </div>
-<a class="order-btn" href="https://order.toasttab.com/online/bobby-burrito" target="_blank">Order Online</a>
 </header>
-<main>
-<section class="page-hero">
+
+<!-- HERO -->
+<section class="hero fade-in">
+  <picture>
+    <source srcset="assets/images/hero-mobile.jpg" media="(max-width: 768px)">
+    <img src="assets/images/hero-desktop.jpg" class="hero-img" alt="Mexican burrito hero">
+  </picture>
+  <div class="hero-overlay">
+    <div class="container hero-content">
+      <div class="hero-tag">Full Menu</div>
+      <h1>Your Favourites. Made Your Way.</h1>
+      <p class="tagline">Build-your-own burritos, bowls, tacos, quesadillas and more.</p>
+      <a href="order.html" class="btn btn-menu">Order Pickup</a>
+    </div>
+  </div>
+</section>
+
+<!-- MENU CATEGORIES -->
+<section class="section fade-in">
   <div class="container">
-    <h1>Menu</h1>
-<a class="hero-order" href="https://order.toasttab.com/online/bobby-burrito" target="_blank">Order Now</a>
-    <p>Build-your-own Mexican favourites with flexible sizes and toppings.</p>
+    <h2 class="section-title">Browse Our Menu</h2>
+
+    <!-- BURRITOS -->
+    <div class="menu-highlight-grid" id="burritos">
+      <article class="menu-highlight-card">
+        <img src="assets/images/burrito.jpg" alt="Burrito">
+        <div class="menu-highlight-card-inner">
+          <h3>Burritos</h3>
+          <p>Regular, Large, Extra Large – loaded with your choice of protein, rice, beans, toppings and sauces.</p>
+          <a href="prices.html#burritos" class="link-inline">See Prices →</a>
+        </div>
+      </article>
+    </div>
+
+    <!-- BOWLS -->
+    <div class="menu-highlight-grid" id="bowls">
+      <article class="menu-highlight-card">
+        <img src="assets/images/burrito-bowl.jpg" alt="Burrito Bowl">
+        <div class="menu-highlight-card-inner">
+          <h3>Burrito Bowls</h3>
+          <p>All the flavour, none of the wrap. Fresh, hearty and fully customizable.</p>
+          <a href="prices.html#bowls" class="link-inline">See Prices →</a>
+        </div>
+      </article>
+    </div>
+
+    <!-- TACOS -->
+    <div class="menu-highlight-grid" id="tacos">
+      <article class="menu-highlight-card">
+        <img src="assets/images/taco-3.jpg" alt="Taco Trio">
+        <div class="menu-highlight-card-inner">
+          <h3>3-Taco</h3>
+          <p>Soft or hard shell — loaded with your favourite protein, lettuce, cheese and salsa.</p>
+          <a href="prices.html#tacos" class="link-inline">See Prices →</a>
+        </div>
+      </article>
+    </div>
+
+    <!-- QUESADILLAS -->
+    <div class="menu-highlight-grid" id="quesadillas">
+      <article class="menu-highlight-card">
+        <img src="assets/images/quesadilla.jpg" alt="Quesadilla">
+        <div class="menu-highlight-card-inner">
+          <h3>Quesadillas</h3>
+          <p>Golden grilled, packed with melted cheese & toppings of your choice.</p>
+          <a href="prices.html#quesadillas" class="link-inline">See Prices →</a>
+        </div>
+      </article>
+    </div>
+
+    <!-- NACHOS -->
+    <div class="menu-highlight-grid" id="nachos">
+      <article class="menu-highlight-card">
+        <img src="assets/images/nacho-bowl.jpg" alt="Nacho Bowl">
+        <div class="menu-highlight-card-inner">
+          <h3>Nacho Bowl</h3>
+          <p>Loaded with queso, salsa, guacamole & toppings.</p>
+          <a href="prices.html#nachos" class="link-inline">See Prices →</a>
+        </div>
+      </article>
+    </div>
+
+    <!-- SIDES -->
+    <div class="menu-highlight-grid" id="sides">
+      <article class="menu-highlight-card">
+        <img src="assets/images/beef-chili.jpg" alt="Beef Chili">
+        <div class="menu-highlight-card-inner">
+          <h3>Beef Chili</h3>
+          <p>Slow-cooked, hearty and flavourful.</p>
+          <a href="prices.html#sides" class="link-inline">See Prices →</a>
+        </div>
+      </article>
+
+      <article class="menu-highlight-card">
+        <img src="assets/images/chips-queso.jpg" alt="Chips and Queso">
+        <div class="menu-highlight-card-inner">
+          <h3>Chips & Queso</h3>
+          <p>Warm queso with fresh tortilla chips.</p>
+          <a href="prices.html#sides" class="link-inline">See Prices →</a>
+        </div>
+      </article>
+
+      <article class="menu-highlight-card">
+        <img src="assets/images/chips-salsa-queso.jpg" alt="Chips Salsa Queso">
+        <div class="menu-highlight-card-inner">
+          <h3>Chips, Salsa & Queso</h3>
+          <p>A trio of your favourite dips.</p>
+          <a href="prices.html#sides" class="link-inline">See Prices →</a>
+        </div>
+      </article>
+    </div>
+
+    <!-- DESSERT -->
+    <div class="menu-highlight-grid" id="dessert">
+      <article class="menu-highlight-card">
+        <img src="assets/images/churro.jpg" alt="Churros">
+        <div class="menu-highlight-card-inner">
+          <h3>Churros</h3>
+          <p>Sweet cinnamon sticks served warm.</p>
+          <a href="prices.html#dessert" class="link-inline">See Prices →</a>
+        </div>
+      </article>
+
+      <article class="menu-highlight-card">
+        <img src="assets/images/brownie.jpg" alt="Brownie">
+        <div class="menu-highlight-card-inner">
+          <h3>Chocolate Brownie</h3>
+          <p>Rich, fudgy & fresh-baked.</p>
+          <a href="prices.html#dessert" class="link-inline">See Prices →</a>
+        </div>
+      </article>
+    </div>
+
   </div>
 </section>
 
-<section class="section">
-  <div class="container menu-page">
-    <div class="menu-category" id="burritos">
-      <h2>Burritos 🌯</h2>
-      <p>Regular, Large and Extra Large. Includes rice, beans, toppings and salsa.</p>
-      <ul>
-        <li>Choose your protein: Chicken, Ground Beef, Al Pastor, Chorizo, Butter Chicken, Falafel, Veggie</li>
-        <li>Extra protein: +3.99</li>
-      </ul>
-    </div>
-
-    <div class="menu-category" id="bowls">
-      <h2>Burrito Bowls 🥗</h2>
-      <p>All the flavour of a burrito served in a bowl. Sizes: Regular and Large.</p>
-      <ul>
-        <li>Same protein options as burritos</li>
-        <li>Extra protein: +3.99</li>
-      </ul>
-    </div>
-
-    <div class="menu-category" id="quesadillas">
-      <h2>Quesadillas 🧀</h2>
-      <p>Grilled cheese quesadillas with your choice of filling. Sizes: Regular and Large.</p>
-      <ul>
-        <li>Any burrito protein or veggie</li>
-        <li>Extra protein: +3.99</li>
-      </ul>
-    </div>
-
-    <div class="menu-category" id="tacos">
-      <h2>3-Taco 🌮</h2>
-      <p>Three tacos with your choice of shell, protein and toppings.</p>
-      <ul>
-        <li>Soft or crispy shell</li>
-        <li>Any burrito protein or veggie</li>
-      </ul>
-    </div>
-
-    <div class="menu-category" id="nachos">
-      <h2>Nacho Bowl 🔥</h2>
-      <p>Loaded nachos topped with queso, salsa, guac and your choice of protein.</p>
-      <ul>
-        <li>Fully loaded single size</li>
-        <li>Extra protein: +3.99</li>
-      </ul>
-    </div>
-
-    <div class="menu-category" id="sides">
-      <h2>Sides &amp; Drinks</h2>
-      <h3>Sides</h3>
-      <ul>
-        <li>Bag of chips 1.99</li>
-        <li>Chips &amp; Salsa 2.99</li>
-        <li>Chips &amp; Queso 3.49</li>
-        <li>Chips &amp; Guac 3.99</li>
-        <li>Beef Chilli 4.99</li>
-        <li>Beef Chilli Platter (6 regular) – 15.99</li>
-      </ul>
-      <h3>Desserts</h3>
-      <ul>
-        <li>Brownie 2.99</li>
-        <li>Churro 2.99</li>
-      </ul>
-      <h3>Drinks</h3>
-      <ul>
-        <li>Can/Fountain Pop 1.99</li>
-        <li>Bottled Pop / Jarritos 2.99</li>
-        <li>Pure Leaf Iced Tea 3.59</li>
-      </ul>
-    </div>
-  </div>
-</section>
-</main>
+<!-- FOOTER -->
 <footer class="site-footer">
   <div class="container footer-grid">
+
     <div>
-      <h4>Bobby Burrito &amp; Taco</h4>
+      <h4>Bobby Burrito & Taco</h4>
       <p>3580 Tecumseh Rd E<br>Windsor, ON</p>
       <p><strong>Phone:</strong> <a href="tel:15199158488">519-915-8488</a></p>
     </div>
+
     <div>
       <h4>Hours</h4>
-      <p>Mon–Sat: 11:00 AM – 9:00 PM<br>Sun: 11:00 AM – 8:00 PM</p>
+      <p>Mon–Sat: 11 AM – 9 PM<br>Sun: 11 AM – 8 PM</p>
     </div>
+
     <div>
-      <h4>Follow us</h4>
-      <p><a href="https://www.instagram.com/bobby_burrito_taco" target="_blank" rel="noopener">@bobby_burrito_taco</a><br>
-         <a href="#">Bobby Burrito &amp; Taco on Facebook</a></p>
+      <h4>Follow Us</h4>
+      <p>
+        <a href="https://www.instagram.com/bobby_burrito_taco">@bobby_burrito_taco</a><br>
+        <a href="#">Facebook</a>
+      </p>
     </div>
+
   </div>
+
   <div class="footer-bottom">
-    <span>© 2025 Bobby Burrito &amp; Taco. All rights reserved.</span>
+    © 2025 Bobby Burrito & Taco — All rights reserved.
   </div>
 </footer>
-<script src="assets/script.js"></script>
+
+<script src="assets/js/script.js"></script>
 </body>
 </html>
