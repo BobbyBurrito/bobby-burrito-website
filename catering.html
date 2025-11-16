@@ -59,22 +59,29 @@
       <h3>Request catering</h3>
       <p>Tell us about your event and we’ll follow up with options and pricing.</p>
       <form name="catering" method="POST" data-netlify="true">
-        <input type="hidden" name="form-name" value="catering" />
-        <p><input type="text" name="name" placeholder="Your name" required></p>
-        <p><input type="tel" name="phone" placeholder="Phone number" required></p>
-        <p><input type="email" name="email" placeholder="Email address" required></p>
-        <p>
-          <select name="service" required>
-            <option value="">Pickup or delivery?</option>
-            <option value="pickup">Pickup</option>
-            <option value="delivery">Delivery (if available)</option>
-          </select>
-        </p>
-        <p><input type="text" name="date_time" placeholder="Event date & time" required></p>
-        <p><input type="number" name="people" placeholder="Number of people" min="1" required></p>
-        <p><textarea name="details" placeholder="What would you like to serve? (e.g., taco kit, burrito tray, nachos, drinks)" required></textarea></p>
-        <p><button type="submit" class="btn">Submit catering request</button></p>
-      </form>
+ <input type="hidden" name="form-name" value="catering">
+
+  <label>Your Name</label>
+  <input type="text" name="name" required>
+
+  <label>Your Email</label>
+  <input type="email" name="email" required>
+
+  <label>Your Phone</label>
+  <input type="text" name="phone" required>
+
+  <label>Event Date</label>
+  <input type="date" name="event_date" required>
+
+  <label>Number of People</label>
+  <input type="number" name="people" required>
+
+  <label>Message / Details</label>
+  <textarea name="message" required></textarea>
+
+  <button type="submit">Submit Catering Request</button>
+</form>
+
     </div>
   </div>
 </section>
