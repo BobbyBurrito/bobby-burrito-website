@@ -1246,3 +1246,22 @@ button[type="submit"]:hover,
   max-width: 640px;
   margin-left: 5%;
 }
+/* --- STRONG RED TOAST ORDER BUTTON --- */
+.btn-toast {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 1rem;
+  background: #b30000; /* dark Mexican red */
+  color: #fff !important;
+  border: 2px solid #b30000;
+  text-align: center;
+  transition: 0.25s ease;
+}
+
+.btn-toast:hover {
+  background: #8a0000;
+  border-color: #8a0000;
+  transform: translateY(-2px);
+}
