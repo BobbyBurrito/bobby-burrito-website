@@ -1,165 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bobby Burrito & Taco</title>
-
-    <!-- Correct CSS Path -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-
-    <!-- Correct JS Path -->
-    <script defer src="assets/js/script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loyalty Program – Bobby Burrito & Taco</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
 
-<!-- HEADER -->
+<div class="gift-banner">
+  🎉 Join our Loyalty Program – Earn rewards every time you order!
+</div>
+
 <header class="site-header">
   <div class="header-inner">
-
-    <div class="brand">
-      <img src="assets/images/logo.jpg" class="brand-logo" alt="Bobby Burrito Logo">
+    <a href="index.html" class="brand">
+      <img src="assets/images/logo.jpg" class="brand-logo">
       <span class="brand-text">Bobby Burrito & Taco</span>
-    </div>
+    </a>
 
     <nav class="main-nav">
       <a href="index.html">Home</a>
-      <a href="menu.html">Menu</a>
-      <a href="prices.html">Prices</a>
+      <a href="menu.html">Menu & Prices</a>
       <a href="deals.html">Deals</a>
       <a href="gallery.html">Gallery</a>
       <a href="catering.html">Catering</a>
       <a href="giftcards.html">Gift Cards</a>
-      <a href="loyalty.html" class="full-menu-link">Loyalty</a>
-      <a href="order.html" class="full-menu-link">Order Pickup</a>
+      <a href="loyalty.html" class="active">Loyalty</a>
+      <a href="order.html" class="nav-cta">Order Pickup</a>
     </nav>
 
-    <div class="menu-btn"><div></div><div></div><div></div></div>
-
+    <button class="menu-btn"><span></span><span></span><span></span></button>
   </div>
+
+  <nav class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu & Prices</a>
+    <a href="deals.html">Deals</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="catering.html">Catering</a>
+    <a href="giftcards.html">Gift Cards</a>
+    <a href="loyalty.html" class="active">Loyalty</a>
+    <a href="order.html" class="nav-cta">Order Pickup</a>
+  </nav>
 </header>
 
-<!-- HERO -->
-<section class="hero fade-in">
-  <picture>
-    <source srcset="assets/images/hero-mobile.jpg" media="(max-width: 768px)">
-    <img src="assets/images/hero-desktop.jpg" class="hero-img" alt="Loyalty Program Hero">
-  </picture>
-
-  <div class="hero-overlay">
-    <div class="container hero-content">
-      <div class="hero-tag">Rewards Program</div>
-      <h1>Earn Rewards Every Time You Order</h1>
-      <p class="tagline">Join our loyalty program and enjoy exclusive perks, free items, and member-only deals.</p>
-
-      <a href="https://order.toasttab.com/online/bobby-burrito"
-         class="btn btn-menu"
-         target="_blank">Join Loyalty Program →</a>
+<main class="page-main">
+  <section class="page-hero">
+    <div class="container">
+      <h1>Loyalty Program</h1>
+      <p>Earn points. Get rewards. Enjoy free food.</p>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- HOW IT WORKS -->
-<section class="section fade-in">
-  <div class="container">
+  <section class="section">
+    <div class="container loyalty-grid">
 
-    <h2 class="section-title">How Our Loyalty Program Works</h2>
+      <div>
+        <h2>How It Works</h2>
+        <ul class="bullet-list">
+          <li>Earn points with every order</li>
+          <li>Redeem points for free food</li>
+          <li>Birthday and holiday bonuses</li>
+        </ul>
+      </div>
 
-    <div class="menu-highlight-grid">
-
-      <!-- STEP 1 -->
-      <article class="menu-highlight-card">
-        <img src="assets/images/burrito-bowl.jpg" alt="Sign Up">
-        <div class="menu-highlight-card-inner">
-          <h3>1. Sign Up Free</h3>
-          <p>Use your phone number or email — super quick and easy.</p>
-        </div>
-      </article>
-
-      <!-- STEP 2 -->
-      <article class="menu-highlight-card">
-        <img src="assets/images/taco-3.jpg" alt="Earn Points">
-        <div class="menu-highlight-card-inner">
-          <h3>2. Earn Points</h3>
-          <p>Earn reward points on every order placed through Toast.</p>
-        </div>
-      </article>
-
-      <!-- STEP 3 -->
-      <article class="menu-highlight-card">
-        <img src="assets/images/churro.jpg" alt="Redeem Rewards">
-        <div class="menu-highlight-card-inner">
-          <h3>3. Redeem Rewards</h3>
-          <p>Use points for free items, discounts, and exclusive offers.</p>
-        </div>
-      </article>
+      <div>
+        <h2>Coming Soon</h2>
+        <p>We are setting up a digital loyalty program. Stay tuned for app rewards!</p>
+      </div>
 
     </div>
+  </section>
+</main>
 
-  </div>
-</section>
-
-<!-- REWARD HIGHLIGHTS -->
-<section class="section-alt fade-in">
-  <div class="container">
-
-    <h2 class="section-title">What You Get as a Member</h2>
-
-    <ul class="bullet-list" style="font-size:1rem;">
-      <li>✔ Free items after collecting enough points</li>
-      <li>✔ Exclusive loyalty member deals</li>
-      <li>✔ Early access to new items & promotions</li>
-      <li>✔ Bonus rewards on your birthday</li>
-      <li>✔ Faster checkout with saved preferences</li>
-    </ul>
-
-    <div style="text-align:center; margin-top:1.5rem;">
-      <a href="https://order.toasttab.com/online/bobby-burrito"
-         target="_blank"
-         class="btn btn-menu"
-         style="padding:0.9rem 1.8rem; font-size:1.2rem;">
-        Join Loyalty & Start Earning →
-      </a>
-    </div>
-
-  </div>
-</section>
-
-<!-- FOOTER -->
 <footer class="site-footer">
   <div class="container footer-grid">
-
-    <div>
-      <h4>Bobby Burrito & Taco</h4>
-      <p>3580 Tecumseh Rd E<br>Windsor, ON</p>
-      <p><strong>Phone:</strong> <a href="tel:15199158488">519-915-8488</a></p>
-    </div>
-
-    <div>
-      <h4>Hours</h4>
-      <p>
-        Mon–Sat: 11 AM – 9 PM<br>
-        Sun: 11 AM – 8 PM
-      </p>
-    </div>
-
-    <div>
-      <h4>Follow Us</h4>
-      <p>
-        <a href="https://www.instagram.com/bobby_burrito_taco">@bobby_burrito_taco</a><br>
-        <a href="#">Facebook</a>
-      </p>
-    </div>
-
+    <div><h4>Bobby Burrito & Taco</h4><p>3580 Tecumseh Rd E</p></div>
+    <div><h4>Hours</h4><p>Mon–Sat 11–9 • Sun 11–8</p></div>
+    <div><h4>Follow Us</h4><p>@bobby_burrito_taco</p></div>
   </div>
-
-  <div class="footer-bottom">
-    © 2025 Bobby Burrito & Taco — All rights reserved.
-  </div>
+  <div class="footer-bottom">© 2025 Bobby Burrito & Taco</div>
 </footer>
 
-<script src="assets/js/script.js"></script>
-
+<script src="assets/js/script.js" defer></script>
 </body>
 </html>
