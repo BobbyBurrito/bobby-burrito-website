@@ -1,33 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bobby Burrito & Taco</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deals – Bobby Burrito & Taco</title>
 
-    <!-- Correct CSS Path -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-
-    <!-- Correct JS Path -->
-    <script defer src="assets/js/script.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script defer src="assets/js/script.js"></script>
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header class="site-header">
   <div class="header-inner">
-
     <div class="brand">
-      <img src="assets/images/logo.jpg" class="brand-logo" alt="Bobby Burrito Logo">
+      <img src="assets/images/logo.jpg" class="brand-logo" alt="">
       <span class="brand-text">Bobby Burrito & Taco</span>
     </div>
 
     <nav class="main-nav">
       <a href="index.html">Home</a>
       <a href="menu.html">Menu</a>
-      <a href="prices.html">Prices</a>
-      <a href="deals.html" class="full-menu-link">Deals</a>
+      <a class="active" href="deals.html">Deals</a>
       <a href="gallery.html">Gallery</a>
       <a href="catering.html">Catering</a>
       <a href="giftcards.html">Gift Cards</a>
@@ -35,90 +29,53 @@
       <a href="order.html" class="full-menu-link">Order Pickup</a>
     </nav>
 
-    <div class="menu-btn">
-      <div></div><div></div><div></div>
-    </div>
-
+    <div class="menu-btn"><div></div><div></div><div></div></div>
   </div>
 </header>
 
-<!-- HERO -->
-<section class="hero fade-in">
-  <picture>
-    <source srcset="assets/images/hero-mobile.jpg" media="(max-width: 768px)">
-    <img src="assets/images/hero-desktop.jpg" class="hero-img" alt="Deals Hero">
-  </picture>
-
-  <div class="hero-overlay">
-    <div class="container hero-content">
-      <div class="hero-tag">Special Offers</div>
-      <h1>Fresh Deals. Big Flavour.</h1>
-      <p class="tagline">Save more while enjoying your favourite burritos, tacos & bowls.</p>
-      <a href="order.html" class="btn btn-menu">Order Pickup</a>
-    </div>
-  </div>
+<section class="hero-small">
+  <h1>Current Deals</h1>
+  <p>Fresh, exciting offers — updated regularly.</p>
 </section>
 
-<!-- DEALS SECTION -->
-<section class="section fade-in">
-  <div class="container">
-    <h2 class="section-title">Current Deals</h2>
+<div class="container section">
 
-    <div class="menu-highlight-grid">
+  <!-- DEAL CARD EXAMPLE (REMOVE OR ADD MORE WHEN NEEDED) -->
+  <div class="deals-grid">
 
-      <!-- DEAL 1 -->
-      <article class="menu-highlight-card">
-        <img src="assets/images/burrito.jpg" alt="Burrito Deal">
-        <div class="menu-highlight-card-inner">
-          <h3>$7.99 Regular Burrito</h3>
-          <p>Your favourite burrito loaded with toppings — now only $7.99.</p>
-          <a href="order.html" class="btn btn-small">Order Now</a>
-        </div>
-      </article>
+    <div class="deal-card">
+      <img src="assets/images/taco-3.jpg" alt="Taco Deal">
+      <div class="deal-card-inner">
+        <h3>🌮 Buy 2 Tacos, Get 1 FREE</h3>
+        <p>Soft or hard shell — mix & match your favourites.</p>
+        <a href="https://order.toasttab.com/online/bobby-burrito" class="btn">Order Now</a>
+      </div>
+    </div>
 
-      <!-- DEAL 2 -->
-      <article class="menu-highlight-card">
-        <img src="assets/images/taco-3.jpg" alt="Taco Deal">
-        <div class="menu-highlight-card-inner">
-          <h3>Buy 2 Tacos, Get 1 FREE</h3>
-          <p>Mix & match soft or hard shell. Perfect for taco lovers.</p>
-          <a href="order.html" class="btn btn-small">Order Now</a>
-        </div>
-      </article>
-
-      <!-- DEAL 3 -->
-      <article class="menu-highlight-card">
-        <img src="assets/images/brownie.jpg" alt="Churro Deal">
-        <div class="menu-highlight-card-inner">
-          <h3>FREE Dessert on Orders Over $25</h3>
-          <p>Choose between churros or brownie — on us!</p>
-          <a href="order.html" class="btn btn-small">Order Now</a>
-        </div>
-      </article>
-
-      <!-- DEAL 4 -->
-      <article class="menu-highlight-card">
-        <img src="assets/images/burrito-bowl.jpg" alt="Burrito Bowl Deal">
-        <div class="menu-highlight-card-inner">
-          <h3>$1 Off Any Burrito Bowl</h3>
-          <p>Fresh ingredients, fully customizable.</p>
-          <a href="order.html" class="btn btn-small">Order Now</a>
-        </div>
-      </article>
-
+    <div class="deal-card">
+      <img src="assets/images/taco-kit.jpg" alt="Family Taco Kit">
+      <div class="deal-card-inner">
+        <h3>🌮 Taco Kit for 4 — Only $29.99</h3>
+        <p>Includes tortillas, proteins, toppings & salsa. Perfect for family night!</p>
+        <a href="https://order.toasttab.com/online/bobby-burrito" class="btn">Order Now</a>
+      </div>
     </div>
 
   </div>
-</section>
 
-<!-- FOOTER -->
+  <!-- NOTE -->
+  <p class="menu-note">
+    *Deals are limited-time only and subject to availability.
+  </p>
+
+</div>
+
 <footer class="site-footer">
   <div class="container footer-grid">
-
     <div>
       <h4>Bobby Burrito & Taco</h4>
       <p>3580 Tecumseh Rd E<br>Windsor, ON</p>
-      <p><strong>Phone:</strong> <a href="tel:15199158488">519-915-8488</a></p>
+      <p><strong>Phone:</strong> 519-915-8488</p>
     </div>
 
     <div>
@@ -133,7 +90,6 @@
         <a href="#">Facebook</a>
       </p>
     </div>
-
   </div>
 
   <div class="footer-bottom">
@@ -141,6 +97,5 @@
   </div>
 </footer>
 
-<script src="assets/js/script.js"></script>
 </body>
 </html>
