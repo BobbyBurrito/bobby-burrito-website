@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bobby Burrito & Taco</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bobby Burrito & Taco – Fresh Mexican Food in Windsor</title>
 
-    <!-- Correct CSS Path -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+  <meta name="description" content="Family-owned Mexican restaurant in Windsor serving fresh burritos, bowls, tacos, nachos & quesadillas. Order online for pickup through Toast.">
 
-    <!-- Correct JS Path -->
-    <script defer src="assets/js/script.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script defer src="assets/js/script.js"></script>
 </head>
 
 <body>
@@ -28,11 +27,9 @@
       <span class="brand-text">Bobby Burrito & Taco</span>
     </div>
 
-    <!-- Navigation -->
     <nav class="main-nav">
-      <a href="index.html">Home</a>
+      <a href="index.html" class="active">Home</a>
       <a href="menu.html">Menu</a>
-      <a href="prices.html">Prices</a>
       <a href="deals.html">Deals</a>
       <a href="gallery.html">Gallery</a>
       <a href="catering.html">Catering</a>
@@ -48,11 +45,11 @@
   </div>
 </header>
 
-<!-- TOP SLIDER -->
+<!-- TOP HERO CAROUSEL -->
 <div class="hero-carousel">
-  <img src="assets/images/hero-slide1.jpg" class="slide active">
-  <img src="assets/images/hero-slide2.jpg" class="slide">
-  <img src="assets/images/hero-slide3.jpg" class="slide">
+  <img src="assets/images/hero-slide1.jpg" class="slide active" alt="Burrito and bowl combo">
+  <img src="assets/images/hero-slide2.jpg" class="slide" alt="Tacos with toppings">
+  <img src="assets/images/hero-slide3.jpg" class="slide" alt="Nachos and Jarritos">
 </div>
 
 <!-- MAIN HERO SECTION -->
@@ -67,7 +64,7 @@
       <div class="hero-tag">Family-owned Mexican in Windsor</div>
 
       <h1>Fresh • Bold • Real Mexican Street Flavour.</h1>
-      <p class="tagline">Build-your-own burritos, bowls, tacos & quesadillas.</p>
+      <p class="tagline">Build-your-own burritos, bowls, tacos, quesadillas & more.</p>
 
       <a href="https://order.toasttab.com/online/bobby-burrito" class="hero-order" target="_blank">
         Order Now →
@@ -75,7 +72,7 @@
 
       <div class="hero-actions">
         <a href="order.html" class="btn">Order Pickup</a>
-        <a href="menu.html" class="btn btn-menu">View Full Menu</a>
+        <a href="menu.html" class="btn btn-menu">View Menu & Prices</a>
       </div>
 
       <p class="hero-hours">
@@ -85,26 +82,27 @@
   </div>
 </section>
 
-<!-- POPULAR PICKS -->
+<!-- POPULAR PICKS IMAGE CAROUSEL -->
 <section class="section-alt fade-in">
   <div class="container">
     <h2 class="section-title">Popular Picks</h2>
 
     <div class="carousel2">
       <div class="c2-track">
-        <img src="assets/images/burrito.jpg" class="c2-img" alt="">
-        <img src="assets/images/burrito-bowl.jpg" class="c2-img" alt="">
-        <img src="assets/images/taco-3.jpg" class="c2-img" alt="">
-        <img src="assets/images/quesadilla.jpg" class="c2-img" alt="">
-        <img src="assets/images/nacho-bowl.jpg" class="c2-img" alt="">
-        <img src="assets/images/chips-queso.jpg" class="c2-img" alt="">
-        <img src="assets/images/churro.jpg" class="c2-img" alt="">
+        <img src="assets/images/burrito.jpg" class="c2-img" alt="Burrito">
+        <img src="assets/images/burrito-bowl.jpg" class="c2-img" alt="Burrito bowl">
+        <img src="assets/images/taco-3.jpg" class="c2-img" alt="Tacos">
+        <img src="assets/images/quesadilla.jpg" class="c2-img" alt="Quesadilla">
+        <img src="assets/images/nacho-bowl.jpg" class="c2-img" alt="Nacho bowl">
+        <img src="assets/images/chips-queso.jpg" class="c2-img" alt="Chips & queso">
+        <img src="assets/images/churro.jpg" class="c2-img" alt="Churros">
+        <img src="assets/images/brownie.jpg" class="c2-img" alt="Brownie">
       </div>
     </div>
   </div>
 </section>
 
-<!-- MINI TESTIMONIALS -->
+<!-- MINI TESTIMONIALS (STATIC STRIP) -->
 <section class="section fade-in">
   <div class="container">
     <h2 class="section-title">What Our Customers Say</h2>
@@ -126,93 +124,117 @@
   </div>
 </section>
 
-<!-- MENU HIGHLIGHTS -->
+<!-- MENU HIGHLIGHTS (MATCHES NEW MERGED MENU) -->
 <section class="section fade-in">
   <div class="container">
     <h2 class="section-title">Menu Highlights</h2>
 
     <div class="menu-highlight-grid">
       <article class="menu-highlight-card">
-        <img src="assets/images/burrito.jpg" alt="">
+        <img src="assets/images/burrito.jpg" alt="Burrito">
         <div class="menu-highlight-card-inner">
-          <h3>Burrito</h3>
-          <p>Fresh, loaded & fully customizable.</p>
-          <a href="menu.html#burritos" class="link-inline">See options →</a>
+          <h3>Burritos</h3>
+          <p>Regular, Large & Extra Large — packed with your favourite toppings.</p>
+          <a href="menu.html" class="link-inline">See full menu →</a>
         </div>
       </article>
 
       <article class="menu-highlight-card">
-        <img src="assets/images/burrito-bowl.jpg" alt="">
+        <img src="assets/images/burrito-bowl.jpg" alt="Burrito Bowl">
         <div class="menu-highlight-card-inner">
-          <h3>Burrito Bowl</h3>
-          <p>Everything you love without the wrap.</p>
-          <a href="menu.html#bowls" class="link-inline">See options →</a>
+          <h3>Burrito Bowls</h3>
+          <p>All the flavour without the wrap. Fresh, hearty & customizable.</p>
+          <a href="menu.html" class="link-inline">See full menu →</a>
         </div>
       </article>
 
       <article class="menu-highlight-card">
-        <img src="assets/images/quesadilla.jpg" alt="">
+        <img src="assets/images/quesadilla.jpg" alt="Quesadilla">
         <div class="menu-highlight-card-inner">
-          <h3>Quesadilla</h3>
-          <p>Melted cheese, grilled golden.</p>
-          <a href="menu.html#quesadillas" class="link-inline">See options →</a>
+          <h3>Quesadillas</h3>
+          <p>Golden grilled, loaded with cheese and your choice of fillings.</p>
+          <a href="menu.html" class="link-inline">See full menu →</a>
         </div>
       </article>
     </div>
 
     <div class="menu-highlight-grid">
       <article class="menu-highlight-card">
-        <img src="assets/images/taco-3.jpg" alt="">
+        <img src="assets/images/taco-3.jpg" alt="Taco Trio">
         <div class="menu-highlight-card-inner">
-          <h3>3-Taco</h3>
-          <p>Soft or hard shell — you choose.</p>
-          <a href="menu.html#tacos" class="link-inline">See options →</a>
+          <h3>Tacos</h3>
+          <p>1-Taco or 3-Taco combo, soft or hard shell — you choose.</p>
+          <a href="menu.html" class="link-inline">See full menu →</a>
         </div>
       </article>
 
       <article class="menu-highlight-card">
-        <img src="assets/images/nacho-bowl.jpg" alt="">
+        <img src="assets/images/nacho-bowl.jpg" alt="Nacho Bowl">
         <div class="menu-highlight-card-inner">
           <h3>Nacho Bowl</h3>
-          <p>Queso, guac, salsa & more.</p>
-          <a href="menu.html#nachos" class="link-inline">See options →</a>
+          <p>Loaded with queso, salsa, guac, jalapeños & more.</p>
+          <a href="menu.html" class="link-inline">See full menu →</a>
         </div>
       </article>
 
       <article class="menu-highlight-card">
-        <img src="assets/images/beef-chili.jpg" alt="">
+        <img src="assets/images/beef-chili.jpg" alt="Beef Chili">
         <div class="menu-highlight-card-inner">
-          <h3>Beef Chili</h3>
-          <p>Rich, hearty & slow-cooked.</p>
-          <a href="menu.html#sides" class="link-inline">See options →</a>
+          <h3>Beef Chili & Sides</h3>
+          <p>Comfort food sides that finish the meal right.</p>
+          <a href="menu.html" class="link-inline">See full menu →</a>
         </div>
       </article>
     </div>
   </div>
 </section>
 
-<!-- BIG TESTIMONIAL CAROUSEL -->
+<!-- BIG CUSTOMER REVIEW CAROUSEL -->
 <section class="section-alt fade-in">
   <div class="container">
     <h2 class="section-title">Why Windsor Loves Us</h2>
 
     <div class="testimonial-carousel">
       <div class="testimonial-track">
-        <div class="testimonial-slide"><div class="testimonial"><div class="stars">★★★★★</div><p>Best burrito spot in Windsor.</p><div class="testimonial-name">– Anthony R.</div></div></div>
-        <div class="testimonial-slide"><div class="testimonial"><div class="stars">★★★★★</div><p>The nacho bowl is amazing.</p><div class="testimonial-name">– Jaspreet K.</div></div></div>
-        <div class="testimonial-slide"><div class="testimonial"><div class="stars">★★★★★</div><p>Family-owned & authentic.</p><div class="testimonial-name">– Megan L.</div></div></div>
-        <div class="testimonial-slide"><div class="testimonial"><div class="stars">★★★★★</div><p>The taco kit is perfect for families.</p><div class="testimonial-name">– Daniel S.</div></div></div>
-        <div class="testimonial-slide"><div class="testimonial"><div class="stars">★★★★★</div><p>Super clean & friendly.</p><div class="testimonial-name">– Sarah W.</div></div></div>
-        <div class="testimonial-slide"><div class="testimonial"><div class="stars">★★★★★</div><p>Best burrito bowl in town.</p><div class="testimonial-name">– Ryan D.</div></div></div>
-        <div class="testimonial-slide"><div class="testimonial"><div class="stars">★★★★★</div><p>The beef chili is incredible.</p><div class="testimonial-name">– Melissa T.</div></div></div>
-        <div class="testimonial-slide"><div class="testimonial"><div class="stars">★★★★★</div><p>Our go-to Mexican spot.</p><div class="testimonial-name">– Justin H.</div></div></div>
+        <div class="testimonial-slide">
+          <div class="testimonial">
+            <div class="stars">★★★★★</div>
+            <p>Best burrito spot in Windsor. Big portions and real flavour.</p>
+            <div class="testimonial-name">– Anthony R.</div>
+          </div>
+        </div>
+        <div class="testimonial-slide">
+          <div class="testimonial">
+            <div class="stars">★★★★★</div>
+            <p>The nacho bowl and queso are amazing. My go-to comfort food.</p>
+            <div class="testimonial-name">– Jaspreet K.</div>
+          </div>
+        </div>
+        <div class="testimonial-slide">
+          <div class="testimonial">
+            <div class="stars">★★★★★</div>
+            <p>Family-owned, super friendly and always fresh.</p>
+            <div class="testimonial-name">– Megan L.</div>
+          </div>
+        </div>
+        <div class="testimonial-slide">
+          <div class="testimonial">
+            <div class="stars">★★★★★</div>
+            <p>The taco kit is perfect for our family movie nights.</p>
+            <div class="testimonial-name">– Daniel S.</div>
+          </div>
+        </div>
+        <div class="testimonial-slide">
+          <div class="testimonial">
+            <div class="stars">★★★★★</div>
+            <p>Consistent quality, clean place and great staff.</p>
+            <div class="testimonial-name">– Sarah W.</div>
+          </div>
+        </div>
       </div>
 
       <div class="testimonial-dots">
         <span class="testimonial-dot active"></span>
-        <span class="testimonial-dot"></span>
-        <span class="testimonial-dot"></span>
-        <span class="testimonial-dot"></span>
         <span class="testimonial-dot"></span>
         <span class="testimonial-dot"></span>
         <span class="testimonial-dot"></span>
@@ -234,7 +256,7 @@
         <li><strong>Call:</strong> <a href="tel:15199158488">519-915-8488</a></li>
         <li>
           <strong>Order Online:</strong>
-          <a href="https://order.toasttab.com/online/bobby-burrito">Toast Ordering Page</a>
+          <a href="https://order.toasttab.com/online/bobby-burrito" target="_blank">Toast Ordering Page</a>
         </li>
       </ul>
 
@@ -275,6 +297,5 @@
   </div>
 </footer>
 
-<script src="assets/js/script.js"></script>
 </body>
 </html>
