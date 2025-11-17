@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bobby Burrito & Taco</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Bobby Burrito & Taco</title>
 
-    <!-- Correct CSS Path -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-
-    <!-- Correct JS Path -->
-    <script defer src="assets/js/script.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-
 <body>
+
+<!-- GIFT CARD BANNER -->
+<div class="gift-banner">
+  🎁 Gift Cards Available — Perfect for holidays & celebrations!
+  <a href="giftcards.html">Buy Now →</a>
+</div>
 
 <!-- HEADER -->
 <header class="site-header">
   <div class="header-inner">
-
     <div class="brand">
-      <img src="assets/images/logo.jpg" alt="Logo" class="brand-logo">
+      <img src="assets/images/logo.jpg" alt="Bobby Burrito Logo" class="brand-logo">
       <span class="brand-text">Bobby Burrito & Taco</span>
     </div>
 
@@ -28,109 +28,81 @@
       <a href="menu.html">Menu</a>
       <a href="prices.html">Prices</a>
       <a href="deals.html">Deals</a>
-      <a href="gallery.html" class="full-menu-link">Gallery</a>
+      <a href="gallery.html" class="active">Gallery</a>
       <a href="catering.html">Catering</a>
       <a href="giftcards.html">Gift Cards</a>
       <a href="loyalty.html">Loyalty</a>
       <a href="order.html" class="full-menu-link">Order Pickup</a>
     </nav>
 
-    <div class="menu-btn"><div></div><div></div><div></div></div>
-
+    <div class="menu-btn">
+      <div></div><div></div><div></div>
+    </div>
   </div>
 </header>
 
-<!-- HERO -->
-<section class="hero fade-in">
-  <picture>
-    <source srcset="assets/images/hero-mobile.jpg" media="(max-width: 768px)">
-    <img src="assets/images/hero-desktop.jpg" class="hero-img" alt="Gallery Hero">
-  </picture>
-
-  <div class="hero-overlay">
-    <div class="container hero-content">
-      <div class="hero-tag">Gallery</div>
-      <h1>Fresh. Bold. Delicious.</h1>
-      <p class="tagline">See our food, made fresh every day in Windsor.</p>
-    </div>
-  </div>
-</section>
-
-<!-- GALLERY GRID -->
-<section class="section fade-in">
-  <div class="container">
-    <h2 class="section-title">Food Gallery</h2>
-
-    <div class="menu-highlight-grid">
-
-      <article class="menu-highlight-card">
-        <img src="assets/images/burrito.jpg" alt="Burrito">
-      </article>
-
-      <article class="menu-highlight-card">
-        <img src="assets/images/burrito-bowl.jpg" alt="Burrito Bowl">
-      </article>
-
-      <article class="menu-highlight-card">
-        <img src="assets/images/taco-3.jpg" alt="Tacos">
-      </article>
-
-      <article class="menu-highlight-card">
-        <img src="assets/images/quesadilla.jpg" alt="Quesadilla">
-      </article>
-
-      <article class="menu-highlight-card">
-        <img src="assets/images/nacho-bowl.jpg" alt="Nacho Bowl">
-      </article>
-
-      <article class="menu-highlight-card">
-        <img src="assets/images/chips-queso.jpg" alt="Chips & Queso">
-      </article>
-
-      <article class="menu-highlight-card">
-        <img src="assets/images/chips-salsa-queso.jpg" alt="Chips Salsa Queso">
-      </article>
-
-      <article class="menu-highlight-card">
-        <img src="assets/images/beef-chili.jpg" alt="Beef Chili">
-      </article>
-
-      <article class="menu-highlight-card">
-        <img src="assets/images/churro.jpg" alt="Churros">
-      </article>
-
-      <article class="menu-highlight-card">
-        <img src="assets/images/brownie.jpg" alt="Brownie">
-      </article>
-
-      <article class="menu-highlight-card">
-        <img src="assets/images/taco-kit.jpg" alt="Taco Kit">
-      </article>
-
-      <article class="menu-highlight-card">
-        <img src="assets/images/jarritos-guac.jpg" alt="Jarritos and Guacamole">
-      </article>
-
+<main class="page-main">
+  <section class="section">
+    <div class="container">
+      <h1 class="page-title">Gallery</h1>
+      <p class="page-intro">
+        A look at our burritos, bowls, tacos and more. Tap any photo to view it fullscreen.
+      </p>
     </div>
 
-  </div>
-</section>
+    <div class="gallery-masonry">
+      <!-- Use the best food shots here -->
+      <div class="gallery-item">
+        <img src="assets/images/burrito.jpg" alt="Loaded burrito" />
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/burrito-bowl.jpg" alt="Burrito bowl with guac" />
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/taco-3.jpg" alt="Assorted tacos" />
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/quesadilla.jpg" alt="Quesadilla with cheese pull" />
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/nacho-bowl.jpg" alt="Nacho bowl with toppings" />
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/chips-queso.jpg" alt="Chips with queso and salsa" />
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/churro.jpg" alt="Churros dessert" />
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/brownie.jpg" alt="Chocolate brownie" />
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/beef-chili.jpg" alt="Beef chili" />
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/jarritos-guac.jpg" alt="Jarritos and guac" />
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/hero-desktop.jpg" alt="Hero burrito shot" />
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/taco-kit.jpg" alt="Taco kit platter" />
+      </div>
+    </div>
+  </section>
+</main>
 
-<!-- FOOTER -->
 <footer class="site-footer">
   <div class="container footer-grid">
-
     <div>
       <h4>Bobby Burrito & Taco</h4>
       <p>3580 Tecumseh Rd E<br>Windsor, ON</p>
       <p><strong>Phone:</strong> <a href="tel:15199158488">519-915-8488</a></p>
     </div>
-
     <div>
       <h4>Hours</h4>
       <p>Mon–Sat: 11 AM – 9 PM<br>Sun: 11 AM – 8 PM</p>
     </div>
-
     <div>
       <h4>Follow Us</h4>
       <p>
@@ -138,15 +110,41 @@
         <a href="#">Facebook</a>
       </p>
     </div>
-
   </div>
-
   <div class="footer-bottom">
     © 2025 Bobby Burrito & Taco — All rights reserved.
   </div>
 </footer>
 
-<script src="assets/js/script.js"></script>
+<!-- Simple lightbox just for gallery page -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const images = document.querySelectorAll('.gallery-masonry img');
+    if (!images.length) return;
 
+    const overlay = document.createElement('div');
+    overlay.className = 'lightbox-overlay';
+    overlay.innerHTML = '<img class="lightbox-img" alt=""><button class="lightbox-close">&times;</button>';
+    document.body.appendChild(overlay);
+
+    const overlayImg = overlay.querySelector('.lightbox-img');
+    const closeBtn = overlay.querySelector('.lightbox-close');
+
+    images.forEach(img => {
+      img.addEventListener('click', () => {
+        overlayImg.src = img.src;
+        overlay.classList.add('open');
+      });
+    });
+
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay || e.target === closeBtn) {
+        overlay.classList.remove('open');
+      }
+    });
+  });
+</script>
+
+<script src="assets/js/script.js"></script>
 </body>
 </html>
