@@ -4,98 +4,108 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Deals – Bobby Burrito & Taco</title>
-
   <link rel="stylesheet" href="assets/css/style.css" />
-  <script defer src="assets/js/script.js"></script>
 </head>
-
 <body>
 
-<header class="site-header">
-  <div class="header-inner">
-    <div class="brand">
-      <img src="assets/images/logo.jpg" class="brand-logo" alt="">
-      <span class="brand-text">Bobby Burrito & Taco</span>
+  <div class="gift-banner">
+    🎁 Gift Cards Available — Perfect for holidays & celebrations!
+    <a href="giftcards.html">Buy Now →</a>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/images/logo.jpg" class="brand-logo" alt="Logo">
+        <span class="brand-text">Bobby Burrito & Taco</span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu & Prices</a>
+        <a href="deals.html" class="active">Deals</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="catering.html">Catering</a>
+        <a href="giftcards.html">Gift Cards</a>
+        <a href="loyalty.html">Loyalty</a>
+        <a href="order.html" class="nav-cta">Order Pickup</a>
+      </nav>
+
+      <button class="menu-btn"><span></span><span></span><span></span></button>
     </div>
 
-    <nav class="main-nav">
+    <nav class="mobile-nav">
       <a href="index.html">Home</a>
-      <a href="menu.html">Menu</a>
-      <a class="active" href="deals.html">Deals</a>
+      <a href="menu.html">Menu & Prices</a>
+      <a href="deals.html" class="active">Deals</a>
       <a href="gallery.html">Gallery</a>
       <a href="catering.html">Catering</a>
       <a href="giftcards.html">Gift Cards</a>
       <a href="loyalty.html">Loyalty</a>
-      <a href="order.html" class="full-menu-link">Order Pickup</a>
+      <a href="order.html" class="nav-cta">Order Pickup</a>
     </nav>
+  </header>
 
-    <div class="menu-btn"><div></div><div></div><div></div></div>
-  </div>
-</header>
-
-<section class="hero-small">
-  <h1>Current Deals</h1>
-  <p>Fresh, exciting offers — updated regularly.</p>
-</section>
-
-<div class="container section">
-
-  <!-- DEAL CARD EXAMPLE (REMOVE OR ADD MORE WHEN NEEDED) -->
-  <div class="deals-grid">
-
-    <div class="deal-card">
-      <img src="assets/images/taco-3.jpg" alt="Taco Deal">
-      <div class="deal-card-inner">
-        <h3>🌮 Buy 2 Tacos, Get 1 FREE</h3>
-        <p>Soft or hard shell — mix & match your favourites.</p>
-        <a href="https://order.toasttab.com/online/bobby-burrito" class="btn">Order Now</a>
+  <main class="page-main">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Deals</h1>
+        <p>Save more. Eat better. Windsor’s favourite Mexican specials.</p>
       </div>
-    </div>
+    </section>
 
-    <div class="deal-card">
-      <img src="assets/images/taco-kit.jpg" alt="Family Taco Kit">
-      <div class="deal-card-inner">
-        <h3>🌮 Taco Kit for 4 — Only $29.99</h3>
-        <p>Includes tortillas, proteins, toppings & salsa. Perfect for family night!</p>
-        <a href="https://order.toasttab.com/online/bobby-burrito" class="btn">Order Now</a>
+    <section class="section">
+      <div class="container deal-grid">
+
+        <!-- TACO DEAL -->
+        <article class="deal-card">
+          <img src="assets/images/taco-3.jpg" alt="Tacos">
+          <div class="deal-content">
+            <h2>Buy 2 Tacos, Get 1 FREE</h2>
+            <p>Mix & match shells and proteins. Premium proteins extra.</p>
+            <a href="https://order.toasttab.com/online/bobby-burrito" target="_blank" class="btn btn-primary">
+              Order Taco Deal →
+            </a>
+          </div>
+        </article>
+
+        <!-- BURRITO DEAL -->
+        <article class="deal-card">
+          <img src="assets/images/burrito.jpg" alt="Burrito">
+          <div class="deal-content">
+            <h2>2 Burritos for $19.99</h2>
+            <p>Regular burritos with standard proteins. Upgrade available.</p>
+            <a href="https://order.toasttab.com/online/bobby-burrito" target="_blank" class="btn btn-primary">
+              Order Burrito Deal →
+            </a>
+          </div>
+        </article>
+
+        <!-- NACHO BOWL DEAL -->
+        <article class="deal-card">
+          <img src="assets/images/nacho-bowl.jpg" alt="Nacho Bowl">
+          <div class="deal-content">
+            <h2>Nacho Bowl + Drink for $12.99</h2>
+            <p>Choose your dip + any canned drink.</p>
+            <a href="https://order.toasttab.com/online/bobby-burrito" target="_blank" class="btn btn-primary">
+              Order Nacho Deal →
+            </a>
+          </div>
+        </article>
+
       </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><h4>Bobby Burrito & Taco</h4><p>3580 Tecumseh Rd E • Windsor, ON</p></div>
+      <div><h4>Hours</h4><p>Mon–Sat 11–9<br>Sun 11–8</p></div>
+      <div><h4>Follow Us</h4><p>@bobby_burrito_taco</p></div>
     </div>
+    <div class="footer-bottom">© 2025 Bobby Burrito & Taco</div>
+  </footer>
 
-  </div>
-
-  <!-- NOTE -->
-  <p class="menu-note">
-    *Deals are limited-time only and subject to availability.
-  </p>
-
-</div>
-
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <div>
-      <h4>Bobby Burrito & Taco</h4>
-      <p>3580 Tecumseh Rd E<br>Windsor, ON</p>
-      <p><strong>Phone:</strong> 519-915-8488</p>
-    </div>
-
-    <div>
-      <h4>Hours</h4>
-      <p>Mon–Sat: 11 AM – 9 PM<br>Sun: 11 AM – 8 PM</p>
-    </div>
-
-    <div>
-      <h4>Follow Us</h4>
-      <p>
-        <a href="https://www.instagram.com/bobby_burrito_taco">@bobby_burrito_taco</a><br>
-        <a href="#">Facebook</a>
-      </p>
-    </div>
-  </div>
-
-  <div class="footer-bottom">
-    © 2025 Bobby Burrito & Taco — All rights reserved.
-  </div>
-</footer>
-
+<script src="assets/js/script.js" defer></script>
 </body>
 </html>
