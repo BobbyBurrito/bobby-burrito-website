@@ -3,296 +3,284 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bobby Burrito & Taco – Fresh Mexican Food in Windsor</title>
-
-  <meta name="description" content="Family-owned Mexican restaurant in Windsor serving fresh burritos, bowls, tacos, nachos & quesadillas. Order online for pickup through Toast.">
-
+  <title>Bobby Burrito & Taco – Fresh Mexican in Windsor</title>
   <link rel="stylesheet" href="assets/css/style.css" />
-  <script defer src="assets/js/script.js"></script>
 </head>
-
 <body>
 
-<!-- GIFT CARD BANNER -->
-<div class="gift-banner">
-  🎁 Gift Cards Available — Perfect for holidays & celebrations!
-  <a href="giftcards.html">Buy Now →</a>
-</div>
+  <!-- GIFT CARD BANNER -->
+  <div class="gift-banner">
+    🎁 Gift Cards Available — Perfect for holidays & celebrations!
+    <a href="giftcards.html">Buy Now →</a>
+  </div>
 
-<!-- HEADER -->
-<header class="site-header">
-  <div class="header-inner">
-    <div class="brand">
-      <img src="assets/images/logo.jpg" alt="Bobby Burrito Logo" class="brand-logo">
-      <span class="brand-text">Bobby Burrito & Taco</span>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/images/logo.jpg" alt="Bobby Burrito Logo" class="brand-logo" />
+        <span class="brand-text">Bobby Burrito & Taco</span>
+      </a>
+
+      <!-- Desktop nav -->
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu & Prices</a>
+        <a href="deals.html">Deals</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="catering.html">Catering</a>
+        <a href="giftcards.html">Gift Cards</a>
+        <a href="loyalty.html">Loyalty</a>
+        <a href="order.html" class="nav-cta">Order Pickup</a>
+      </nav>
+
+      <!-- Mobile menu button -->
+      <button class="menu-btn" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
     </div>
 
-    <nav class="main-nav">
-      <a href="index.html" class="active">Home</a>
-      <a href="menu.html">Menu</a>
+    <!-- Mobile nav -->
+    <nav class="mobile-nav">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu & Prices</a>
       <a href="deals.html">Deals</a>
       <a href="gallery.html">Gallery</a>
       <a href="catering.html">Catering</a>
       <a href="giftcards.html">Gift Cards</a>
       <a href="loyalty.html">Loyalty</a>
-      <a href="order.html" class="full-menu-link">Order Pickup</a>
+      <a href="order.html" class="nav-cta">Order Pickup</a>
     </nav>
+  </header>
 
-    <!-- Mobile Menu Button -->
-    <div class="menu-btn">
-      <div></div><div></div><div></div>
-    </div>
-  </div>
-</header>
-
-<!-- HERO: 3-PHOTO CAROUSEL + INTRO -->
-<section class="hero hero-with-slider fade-in">
-  <!-- 3-image carousel ONLY -->
-  <div class="hero-carousel">
-    <img src="assets/images/hero-slide1.jpg" class="slide active" alt="Loaded burrito with toppings">
-    <img src="assets/images/hero-slide2.jpg" class="slide" alt="Burrito bowl with guac">
-    <img src="assets/images/hero-slide3.jpg" class="slide" alt="Tacos and nachos platter">
-  </div>
-
-<!-- HERO SECTION: Full-width 3-Image Carousel + Text Overlay -->
-<section class="hero-section">
-  <div class="hero-slider">
-    <img src="assets/images/hero1.jpg" class="hero-slide active" alt="">
-    <img src="assets/images/hero2.jpg" class="hero-slide" alt="">
-    <img src="assets/images/hero3.jpg" class="hero-slide" alt="">
-  </div>
-
-  <div class="hero-text-block">
-    <div class="hero-tag">Family-owned Mexican in Windsor</div>
-    <h1>Fresh • Bold • Real Mexican Street Flavour.</h1>
-    <p class="hero-subtitle">Build-your-own burritos, bowls, tacos & quesadillas.</p>
-
-    <a href="https://order.toasttab.com/online/bobby-burrito"
-       target="_blank"
-       class="btn-toast">
-      Order on Toast →
-    </a>
-
-    <div class="hero-hours">
-      Mon–Sat: 11 AM – 9 PM • Sun: 11 AM – 8 PM
-    </div>
-  </div>
-</section>
-
-<!-- POPULAR PICKS IMAGE CAROUSEL -->
-<section class="section-alt fade-in">
-  <div class="container">
-    <h2 class="section-title">Popular Picks</h2>
-
-    <div class="carousel2">
-      <div class="c2-track">
-        <img src="assets/images/burrito.jpg" class="c2-img" alt="Burrito">
-        <img src="assets/images/burrito-bowl.jpg" class="c2-img" alt="Burrito bowl">
-        <img src="assets/images/taco-3.jpg" class="c2-img" alt="Tacos">
-        <img src="assets/images/quesadilla.jpg" class="c2-img" alt="Quesadilla">
-        <img src="assets/images/nacho-bowl.jpg" class="c2-img" alt="Nacho bowl">
-        <img src="assets/images/chips-queso.jpg" class="c2-img" alt="Chips & queso">
-        <img src="assets/images/churro.jpg" class="c2-img" alt="Churros">
-        <img src="assets/images/brownie.jpg" class="c2-img" alt="Brownie">
+  <!-- TOP IMAGE CAROUSEL (3 hero photos) -->
+  <section class="hero-carousel">
+    <div class="hero-carousel-track">
+      <div class="hero-carousel-slide active">
+        <img src="assets/images/hero-slide1.jpg" alt="Burrito close-up" />
+      </div>
+      <div class="hero-carousel-slide">
+        <img src="assets/images/hero-slide2.jpg" alt="Taco platter" />
+      </div>
+      <div class="hero-carousel-slide">
+        <img src="assets/images/hero-slide3.jpg" alt="Nacho bowl" />
       </div>
     </div>
-  </div>
-</section>
+    <div class="hero-carousel-dots">
+      <button class="dot active" aria-label="Slide 1"></button>
+      <button class="dot" aria-label="Slide 2"></button>
+      <button class="dot" aria-label="Slide 3"></button>
+    </div>
+  </section>
 
-<!-- MINI TESTIMONIALS (STATIC STRIP) -->
-<section class="section fade-in">
-  <div class="container">
-    <h2 class="section-title">What Our Customers Say</h2>
+  <!-- MAIN HERO SECTION -->
+  <section class="hero">
+    <picture>
+      <source srcset="assets/images/hero-mobile.jpg" media="(max-width: 768px)" />
+      <img src="assets/images/hero-desktop.jpg" alt="Fresh burrito on plate" class="hero-img" />
+    </picture>
 
-    <div class="testimonials">
-      <div class="testimonial">
-        <p>"Best burritos in Windsor! Loaded, fresh and flavourful."</p>
-        <h4>- Amandeep S.</h4>
-      </div>
-      <div class="testimonial">
-        <p>"Family-owned spot with amazing tacos. Highly recommended!"</p>
-        <h4>- Sarah M.</h4>
-      </div>
-      <div class="testimonial">
-        <p>"Nacho bowl is fire. Queso is next level."</p>
-        <h4>- David R.</h4>
+    <div class="hero-overlay">
+      <div class="container hero-content">
+        <div class="hero-tag">Family-owned Mexican in Windsor</div>
+        <h1>Fresh • Bold • Real Mexican Street Flavour.</h1>
+        <p class="tagline">
+          Build-your-own burritos, bowls, tacos & quesadillas — loaded with fresh toppings.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="https://order.toasttab.com/online/bobby-burrito" target="_blank" class="btn btn-primary">
+            Order on Toast →
+          </a>
+          <a href="menu.html" class="btn btn-outline">View Menu & Prices</a>
+        </div>
+
+        <p class="hero-hours">
+          Mon–Sat: 11 AM – 9 PM • Sun: 11 AM – 8 PM
+        </p>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- MENU HIGHLIGHTS (MATCHES NEW MERGED MENU) -->
-<section class="section fade-in">
-  <div class="container">
-    <h2 class="section-title">Menu Highlights</h2>
-
-    <div class="menu-highlight-grid">
-      <article class="menu-highlight-card">
-        <img src="assets/images/burrito.jpg" alt="Burrito">
-        <div class="menu-highlight-card-inner">
-          <h3>Burritos</h3>
-          <p>Regular, Large & Extra Large — packed with your favourite toppings.</p>
-          <a href="menu.html" class="link-inline">See full menu →</a>
-        </div>
-      </article>
-
-      <article class="menu-highlight-card">
-        <img src="assets/images/burrito-bowl.jpg" alt="Burrito Bowl">
-        <div class="menu-highlight-card-inner">
-          <h3>Burrito Bowls</h3>
-          <p>All the flavour without the wrap. Fresh, hearty & customizable.</p>
-          <a href="menu.html" class="link-inline">See full menu →</a>
-        </div>
-      </article>
-
-      <article class="menu-highlight-card">
-        <img src="assets/images/quesadilla.jpg" alt="Quesadilla">
-        <div class="menu-highlight-card-inner">
-          <h3>Quesadillas</h3>
-          <p>Golden grilled, loaded with cheese and your choice of fillings.</p>
-          <a href="menu.html" class="link-inline">See full menu →</a>
-        </div>
-      </article>
-    </div>
-
-    <div class="menu-highlight-grid">
-      <article class="menu-highlight-card">
-        <img src="assets/images/taco-3.jpg" alt="Taco Trio">
-        <div class="menu-highlight-card-inner">
-          <h3>Tacos</h3>
-          <p>1-Taco or 3-Taco combo, soft or hard shell — you choose.</p>
-          <a href="menu.html" class="link-inline">See full menu →</a>
-        </div>
-      </article>
-
-      <article class="menu-highlight-card">
-        <img src="assets/images/nacho-bowl.jpg" alt="Nacho Bowl">
-        <div class="menu-highlight-card-inner">
-          <h3>Nacho Bowl</h3>
-          <p>Loaded with queso, salsa, guac, jalapeños & more.</p>
-          <a href="menu.html" class="link-inline">See full menu →</a>
-        </div>
-      </article>
-
-      <article class="menu-highlight-card">
-        <img src="assets/images/beef-chili.jpg" alt="Beef Chili">
-        <div class="menu-highlight-card-inner">
-          <h3>Beef Chili & Sides</h3>
-          <p>Comfort food sides that finish the meal right.</p>
-          <a href="menu.html" class="link-inline">See full menu →</a>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- BIG CUSTOMER REVIEW CAROUSEL -->
-<section class="section-alt fade-in">
-  <div class="container">
-    <h2 class="section-title">Why Windsor Loves Us</h2>
-
-    <div class="testimonial-carousel">
-      <div class="testimonial-track">
-        <div class="testimonial-slide">
-          <div class="testimonial">
-            <div class="stars">★★★★★</div>
-            <p>Best burrito spot in Windsor. Big portions and real flavour.</p>
-            <div class="testimonial-name">– Anthony R.</div>
+  <!-- POPULAR PICKS CAROUSEL -->
+  <section class="section-alt">
+    <div class="container">
+      <h2 class="section-title">Popular Picks</h2>
+      <div class="popular-carousel">
+        <div class="popular-track">
+          <div class="popular-card">
+            <img src="assets/images/burrito.jpg" alt="Burrito" />
+            <h3>Burrito</h3>
+            <p>Loaded, customizable & grilled to perfection.</p>
           </div>
-        </div>
-        <div class="testimonial-slide">
-          <div class="testimonial">
-            <div class="stars">★★★★★</div>
-            <p>The nacho bowl and queso are amazing. My go-to comfort food.</p>
-            <div class="testimonial-name">– Jaspreet K.</div>
+          <div class="popular-card">
+            <img src="assets/images/burrito-bowl.jpg" alt="Burrito bowl" />
+            <h3>Burrito Bowl</h3>
+            <p>All the flavour, no tortilla.</p>
           </div>
-        </div>
-        <div class="testimonial-slide">
-          <div class="testimonial">
-            <div class="stars">★★★★★</div>
-            <p>Family-owned, super friendly and always fresh.</p>
-            <div class="testimonial-name">– Megan L.</div>
+          <div class="popular-card">
+            <img src="assets/images/taco-3.jpg" alt="Three tacos" />
+            <h3>3-Taco Combo</h3>
+            <p>Soft or hard shell, mix your proteins.</p>
           </div>
-        </div>
-        <div class="testimonial-slide">
-          <div class="testimonial">
-            <div class="stars">★★★★★</div>
-            <p>The taco kit is perfect for our family movie nights.</p>
-            <div class="testimonial-name">– Daniel S.</div>
+          <div class="popular-card">
+            <img src="assets/images/quesadilla.jpg" alt="Quesadilla" />
+            <h3>Quesadilla</h3>
+            <p>Cheesy, crispy & perfect with salsa.</p>
           </div>
-        </div>
-        <div class="testimonial-slide">
-          <div class="testimonial">
-            <div class="stars">★★★★★</div>
-            <p>Consistent quality, clean place and great staff.</p>
-            <div class="testimonial-name">– Sarah W.</div>
+          <div class="popular-card">
+            <img src="assets/images/nacho-bowl.jpg" alt="Nacho bowl" />
+            <h3>Nacho Bowl</h3>
+            <p>Queso, guac, salsa & more.</p>
+          </div>
+          <div class="popular-card">
+            <img src="assets/images/churro.jpg" alt="Churros" />
+            <h3>Churros</h3>
+            <p>Warm, crispy & cinnamon-sugar coated.</p>
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="testimonial-dots">
-        <span class="testimonial-dot active"></span>
-        <span class="testimonial-dot"></span>
-        <span class="testimonial-dot"></span>
-        <span class="testimonial-dot"></span>
-        <span class="testimonial-dot"></span>
+  <!-- CUSTOMER QUOTES -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">What Our Customers Say</h2>
+      <div class="testimonials">
+        <div class="testimonial">
+          <p>"Best burritos in Windsor! Loaded, fresh and flavourful."</p>
+          <h4>– Amandeep S.</h4>
+        </div>
+        <div class="testimonial">
+          <p>"Family-owned spot with amazing tacos. Highly recommended!"</p>
+          <h4>– Sarah M.</h4>
+        </div>
+        <div class="testimonial">
+          <p>"Nacho bowl is fire. Queso is next level."</p>
+          <h4>– David R.</h4>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ORDER & LOCATION -->
-<section class="section fade-in">
-  <div class="container info-grid">
-    <div>
-      <h2 class="section-title">Order Your Way</h2>
+  <!-- MENU HIGHLIGHTS -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Menu Highlights</h2>
+      <div class="menu-highlight-grid">
+        <article class="menu-highlight-card">
+          <img src="assets/images/burrito.jpg" alt="Burrito" />
+          <div class="menu-highlight-card-inner">
+            <h3>Burritos</h3>
+            <p>Regular, Large & Extra Large with your choice of protein.</p>
+            <a href="menu.html#burritos" class="link-inline">See burrito options →</a>
+          </div>
+        </article>
 
-      <p>Order pickup online through Toast or give us a call — every order goes straight into our POS.</p>
+        <article class="menu-highlight-card">
+          <img src="assets/images/burrito-bowl.jpg" alt="Burrito Bowl" />
+          <div class="menu-highlight-card-inner">
+            <h3>Burrito Bowls</h3>
+            <p>Low-carb, high flavour. Fresh toppings and sauces.</p>
+            <a href="menu.html#bowls" class="link-inline">See bowl options →</a>
+          </div>
+        </article>
 
-      <ul class="bullet-list">
-        <li><strong>Call:</strong> <a href="tel:15199158488">519-915-8488</a></li>
-        <li>
-          <strong>Order Online:</strong>
-          <a href="https://order.toasttab.com/online/bobby-burrito" target="_blank">Toast Ordering Page</a>
-        </li>
-      </ul>
-
-      <a href="order.html" class="btn">Go to Order Pickup</a>
+        <article class="menu-highlight-card">
+          <img src="assets/images/quesadilla.jpg" alt="Quesadilla" />
+          <div class="menu-highlight-card-inner">
+            <h3>Quesadillas</h3>
+            <p>Cheesy & golden-grilled with your favourite fillings.</p>
+            <a href="menu.html#quesadillas" class="link-inline">See quesadillas →</a>
+          </div>
+        </article>
+      </div>
     </div>
+  </section>
 
-    <div>
-      <h3>Find Us</h3>
-      <p>3580 Tecumseh Rd E<br>Windsor, ON</p>
-      <p>Located in East Windsor with plenty of parking.</p>
+  <!-- BIG TESTIMONIAL CAROUSEL -->
+  <section class="section-alt">
+    <div class="container">
+      <h2 class="section-title">Why Windsor Loves Us</h2>
+      <div class="testimonial-carousel">
+        <div class="testimonial-track">
+          <div class="testimonial-slide">
+            <div class="testimonial">
+              <div class="stars">★★★★★</div>
+              <p>“Best burrito spot in Windsor. Huge portions and real flavour.”</p>
+              <div class="testimonial-name">– Anthony R.</div>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testimonial">
+              <div class="stars">★★★★★</div>
+              <p>“Taco kit is perfect for family movie night.”</p>
+              <div class="testimonial-name">– Jaspreet K.</div>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testimonial">
+              <div class="stars">★★★★★</div>
+              <p>“Always fresh, always consistent. Our go-to Mexican spot.”</p>
+              <div class="testimonial-name">– Megan L.</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-dots">
+          <button class="testimonial-dot active"></button>
+          <button class="testimonial-dot"></button>
+          <button class="testimonial-dot"></button>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- FOOTER -->
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <div>
-      <h4>Bobby Burrito & Taco</h4>
-      <p>3580 Tecumseh Rd E<br>Windsor, ON</p>
-      <p><strong>Phone:</strong> <a href="tel:15199158488">519-915-8488</a></p>
+  <!-- ORDER & LOCATION -->
+  <section class="section">
+    <div class="container info-grid">
+      <div>
+        <h2 class="section-title">Order Your Way</h2>
+        <p>Order pickup online through Toast or give us a call — every order goes straight into our POS.</p>
+        <ul class="bullet-list">
+          <li><strong>Call:</strong> <a href="tel:15199158488">519-915-8488</a></li>
+          <li><strong>Order Online:</strong> <a href="https://order.toasttab.com/online/bobby-burrito" target="_blank">Toast Ordering Page</a></li>
+        </ul>
+        <a href="order.html" class="btn btn-outline">Go to Order Pickup</a>
+      </div>
+      <div>
+        <h3>Find Us</h3>
+        <p>3580 Tecumseh Rd E<br>Windsor, ON</p>
+        <p>Located in East Windsor with plenty of parking.</p>
+      </div>
     </div>
-    <div>
-      <h4>Hours</h4>
-      <p>Mon–Sat: 11 AM – 9 PM<br>Sun: 11 AM – 8 PM</p>
-    </div>
-    <div>
-      <h4>Follow Us</h4>
-      <p>
-        <a href="https://www.instagram.com/bobby_burrito_taco">@bobby_burrito_taco</a><br>
-        <a href="#">Facebook</a>
-      </p>
-    </div>
-  </div>
+  </section>
 
-  <div class="footer-bottom">
-    © 2025 Bobby Burrito & Taco — All rights reserved.
-  </div>
-</footer>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Bobby Burrito & Taco</h4>
+        <p>3580 Tecumseh Rd E<br>Windsor, ON</p>
+        <p><strong>Phone:</strong> <a href="tel:15199158488">519-915-8488</a></p>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <p>Mon–Sat: 11 AM – 9 PM<br>Sun: 11 AM – 8 PM</p>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <p>
+          <a href="https://www.instagram.com/bobby_burrito_taco" target="_blank">@bobby_burrito_taco</a><br />
+          <a href="#">Facebook</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 Bobby Burrito & Taco — All rights reserved.
+    </div>
+  </footer>
 
+  <script src="assets/js/script.js" defer></script>
 </body>
 </html>
