@@ -1217,3 +1217,32 @@ button[type="submit"]:hover,
   position: relative;
   z-index: 1;
 }
+/* --- HERO WITH SLIDER VARIANT --- */
+.hero-with-slider {
+  position: relative;
+  overflow: hidden;
+  padding-top: 0;
+}
+
+/* make the carousel fill the hero background */
+.hero-with-slider .hero-carousel {
+  position: absolute;
+  inset: 0;
+  max-height: none;
+  z-index: 0;
+}
+
+/* reuse fade + scale but on full-height hero */
+.hero-with-slider .slide {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* keep the overlay centered on top of images */
+.hero-with-slider .hero-overlay {
+  position: relative;
+  z-index: 1;
+  max-width: 640px;
+  margin-left: 5%;
+}
