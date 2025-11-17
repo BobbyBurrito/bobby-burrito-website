@@ -1,157 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bobby Burrito & Taco</title>
-
-    <!-- Correct CSS Path -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-
-    <!-- Correct JS Path -->
-    <script defer src="assets/js/script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Pickup – Bobby Burrito & Taco</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-
 <body>
 
-<!-- HEADER -->
+<div class="gift-banner">
+  Pickup Orders Ready Fast — Order Online Now!
+  <a href="https://order.toasttab.com/online/bobby-burrito" target="_blank">Order on Toast →</a>
+</div>
+
 <header class="site-header">
   <div class="header-inner">
-
-    <div class="brand">
-      <img src="assets/images/logo.jpg" alt="Logo" class="brand-logo">
+    <a href="index.html" class="brand">
+      <img src="assets/images/logo.jpg" class="brand-logo">
       <span class="brand-text">Bobby Burrito & Taco</span>
-    </div>
+    </a>
 
     <nav class="main-nav">
       <a href="index.html">Home</a>
-      <a href="menu.html">Menu</a>
-      <a href="prices.html">Prices</a>
+      <a href="menu.html">Menu & Prices</a>
       <a href="deals.html">Deals</a>
       <a href="gallery.html">Gallery</a>
       <a href="catering.html">Catering</a>
       <a href="giftcards.html">Gift Cards</a>
       <a href="loyalty.html">Loyalty</a>
-      <a href="order.html" class="full-menu-link">Order Pickup</a>
+      <a href="order.html" class="active nav-cta">Order Pickup</a>
     </nav>
 
-    <div class="menu-btn"><div></div><div></div><div></div></div>
-
+    <button class="menu-btn"><span></span><span></span><span></span></button>
   </div>
+
+  <nav class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu & Prices</a>
+    <a href="deals.html">Deals</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="catering.html">Catering</a>
+    <a href="giftcards.html">Gift Cards</a>
+    <a href="loyalty.html">Loyalty</a>
+    <a href="order.html" class="active nav-cta">Order Pickup</a>
+  </nav>
 </header>
 
-<!-- HERO -->
-<section class="hero fade-in">
-  <picture>
-    <source srcset="assets/images/hero-mobile.jpg" media="(max-width: 768px)">
-    <img src="assets/images/hero-desktop.jpg" class="hero-img" alt="Order Pickup Hero">
-  </picture>
-
-  <div class="hero-overlay">
-    <div class="container hero-content">
-      <div class="hero-tag">Order Pickup</div>
-      <h1>Fast • Easy • Fresh</h1>
-      <p class="tagline">Place your order in seconds. Ready for pickup in minutes.</p>
-
-      <a href="https://order.toasttab.com/online/bobby-burrito" target="_blank" class="btn btn-menu">
-        Order Now →
+<main class="page-main">
+  <section class="page-hero">
+    <div class="container centered">
+      <h1>Order Pickup</h1>
+      <p>Your fresh Mexican order, ready in minutes.</p>
+      <a href="https://order.toasttab.com/online/bobby-burrito" target="_blank" class="btn btn-primary">
+        Start Order on Toast →
       </a>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ORDER INFO BLOCKS -->
-<section class="section fade-in">
-  <div class="container">
+  <section class="section">
+    <div class="container order-info">
+      <h2>Order By Phone</h2>
+      <p><strong>Call:</strong> <a href="tel:15199158488">519-915-8488</a></p>
 
-    <h2 class="section-title">How to Order</h2>
-
-    <div class="menu-highlight-grid">
-
-      <!-- STEP 1 -->
-      <article class="menu-highlight-card">
-        <img src="assets/images/burrito.jpg" alt="Choose your item">
-        <div class="menu-highlight-card-inner">
-          <h3>1. Choose Your Items</h3>
-          <p>Select burritos, bowls, tacos, quesadillas or sides from our full menu.</p>
-        </div>
-      </article>
-
-      <!-- STEP 2 -->
-      <article class="menu-highlight-card">
-        <img src="assets/images/nacho-bowl.jpg" alt="Customize your meal">
-        <div class="menu-highlight-card-inner">
-          <h3>2. Customize It</h3>
-          <p>Pick your protein, toppings, spice level and extras. Everything is customizable.</p>
-        </div>
-      </article>
-
-      <!-- STEP 3 -->
-      <article class="menu-highlight-card">
-        <img src="assets/images/jarritos-guac.jpg" alt="Pickup order">
-        <div class="menu-highlight-card-inner">
-          <h3>3. Pick Up at the Store</h3>
-          <p>Your order is made fresh and ready fast. No waiting in long lines.</p>
-        </div>
-      </article>
-
-    </div>
-
-    <div style="text-align:center; margin-top:2rem;">
-      <a href="https://order.toasttab.com/online/bobby-burrito" target="_blank" class="btn btn-menu" style="font-size:1.2rem; padding:0.9rem 1.8rem;">
-        Order from Toast →
-      </a>
-    </div>
-
-  </div>
-</section>
-
-<!-- LOCATION -->
-<section class="section-alt fade-in">
-  <div class="container">
-
-    <h2 class="section-title">Pickup Location</h2>
-
-    <p><strong>Bobby Burrito & Taco</strong></p>
-    <p>3580 Tecumseh Rd E<br>Windsor, ON</p>
-    <p>Located in East Windsor — easy parking available.</p>
-
-    <p><strong>Phone:</strong> <a href="tel:15199158488">519-915-8488</a></p>
-
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="site-footer">
-  <div class="container footer-grid">
-
-    <div>
-      <h4>Bobby Burrito & Taco</h4>
+      <h2>Pickup Location</h2>
       <p>3580 Tecumseh Rd E<br>Windsor, ON</p>
-      <p><strong>Phone:</strong> <a href="tel:15199158488">519-915-8488</a></p>
-    </div>
 
-    <div>
-      <h4>Hours</h4>
+      <h2>Hours</h2>
       <p>Mon–Sat: 11 AM – 9 PM<br>Sun: 11 AM – 8 PM</p>
     </div>
+  </section>
+</main>
 
-    <div>
-      <h4>Follow Us</h4>
-      <p>
-        <a href="https://www.instagram.com/bobby_burrito_taco">@bobby_burrito_taco</a><br>
-        <a href="#">Facebook</a>
-      </p>
-    </div>
-
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div><h4>Bobby Burrito & Taco</h4><p>Family-owned Mexican in Windsor</p></div>
+    <div><h4>Follow Us</h4><p>@bobby_burrito_taco</p></div>
   </div>
-
-  <div class="footer-bottom">
-    © 2025 Bobby Burrito & Taco — All rights reserved.
-  </div>
+  <div class="footer-bottom">© 2025 Bobby Burrito & Taco</div>
 </footer>
 
-<script src="assets/js/script.js"></script>
-
+<script src="assets/js/script.js" defer></script>
 </body>
 </html>
