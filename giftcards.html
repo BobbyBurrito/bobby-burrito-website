@@ -5,20 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gift Cards – Bobby Burrito & Taco</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/script.js"></script>
 </head>
-<body>
 
-<div class="gift-banner">
-  🎁 Perfect for holidays & celebrations — Bobby Burrito Gift Cards!
-</div>
+<body>
 
 <header class="site-header">
   <div class="header-inner">
-    <a href="index.html" class="brand">
-      <img src="assets/images/logo.jpg" class="brand-logo">
+    <div class="brand">
+      <img src="assets/images/logo.jpg" alt="Logo" class="brand-logo">
       <span class="brand-text">Bobby Burrito & Taco</span>
-    </a>
-
+    </div>
     <nav class="main-nav">
       <a href="index.html">Home</a>
       <a href="menu.html">Menu & Prices</a>
@@ -27,63 +24,58 @@
       <a href="catering.html">Catering</a>
       <a href="giftcards.html" class="active">Gift Cards</a>
       <a href="loyalty.html">Loyalty</a>
-      <a href="order.html" class="nav-cta">Order Pickup</a>
+      <a href="order.html" class="full-menu-link">Order Pickup</a>
     </nav>
-
-    <button class="menu-btn"><span></span><span></span><span></span></button>
+    <div class="menu-btn"><div></div><div></div><div></div></div>
   </div>
-
-  <nav class="mobile-nav">
-    <a href="index.html">Home</a>
-    <a href="menu.html">Menu & Prices</a>
-    <a href="deals.html">Deals</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="catering.html">Catering</a>
-    <a href="giftcards.html" class="active">Gift Cards</a>
-    <a href="loyalty.html">Loyalty</a>
-    <a href="order.html" class="nav-cta">Order Pickup</a>
-  </nav>
 </header>
 
-<main class="page-main">
-  <section class="page-hero">
-    <div class="container">
-      <h1>Gift Cards</h1>
-      <p>The perfect gift for friends, family & coworkers.</p>
+<section class="section">
+  <div class="container">
+    <h1 class="section-title">Gift Cards</h1>
+
+    <p class="section-subtext">Give the gift of fresh, bold Mexican flavour.</p>
+
+    <div class="giftcard-wrapper">
+      <img src="assets/images/giftcard.jpg" alt="Bobby Burrito Gift Card" class="giftcard-img">
     </div>
-  </section>
 
-  <section class="section">
-    <div class="container giftcard-section">
-      <img src="assets/images/giftcard.jpg" class="giftcard-img" alt="Gift card">
-
-      <div class="giftcard-info">
-        <h2>Available in All Denominations</h2>
-        <p>Use online or in-store for pickup orders.</p>
-
-        <ul class="bullet-list">
-          <li>Great for holidays</li>
-          <li>Birthdays & celebrations</li>
-          <li>Easy last-minute gift</li>
-        </ul>
-
-        <a href="https://order.toasttab.com/online/bobby-burrito" target="_blank" class="btn btn-primary">
-          Buy Gift Card on Toast →
-        </a>
-      </div>
+    <div class="center-btn">
+      <a href="https://order.toasttab.com/online/bobby-burrito"
+         target="_blank"
+         class="btn-red">
+         Buy Gift Card →
+      </a>
     </div>
-  </section>
-</main>
+  </div>
+</section>
 
 <footer class="site-footer">
   <div class="container footer-grid">
-    <div><h4>Bobby Burrito & Taco</h4><p>3580 Tecumseh Rd E</p></div>
-    <div><h4>Hours</h4><p>Mon–Sat 11–9 • Sun 11–8</p></div>
-    <div><h4>Follow Us</h4><p>@bobby_burrito_taco</p></div>
+    <div>
+      <h4>Bobby Burrito & Taco</h4>
+      <p>3580 Tecumseh Rd E<br>Windsor, ON</p>
+      <p><strong>Phone:</strong> <a href="tel:15199158488">519-915-8488</a></p>
+    </div>
+
+    <div>
+      <h4>Hours</h4>
+      <p>Mon–Sat: 11 AM – 9 PM<br>Sun: 11 AM – 8 PM</p>
+    </div>
+
+    <div>
+      <h4>Follow Us</h4>
+      <p>
+        <a href="https://www.instagram.com/bobby_burrito_taco">@bobby_burrito_taco</a><br>
+        <a href="#">Facebook</a>
+      </p>
+    </div>
   </div>
-  <div class="footer-bottom">© 2025 Bobby Burrito & Taco</div>
+
+  <div class="footer-bottom">
+    © 2025 Bobby Burrito & Taco — All rights reserved.
+  </div>
 </footer>
 
-<script src="assets/js/script.js" defer></script>
 </body>
 </html>
