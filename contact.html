@@ -2,92 +2,132 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us – Bobby Burrito & Taco</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>Contact – Bobby Burrito & Taco | Windsor, ON</title>
+
+  <meta name="description" content="Contact Bobby Burrito & Taco in Windsor. Send feedback, request catering, or join our email list for deals and specials.">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="canonical" href="https://www.bobbyburrito.ca/contact.html">
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-
-<div class="gift-banner">
-  Questions? Feedback? We’d love to hear from you!
-</div>
-
 <header class="site-header">
-  <div class="header-inner">
-    <a href="index.html" class="brand">
-      <img src="assets/images/logo.jpg" class="brand-logo">
-      <span class="brand-text">Bobby Burrito & Taco</span>
+  <div class="top-banner">
+    <span>🌮 Taco Tuesday: Buy 2 Tacos, Get 1 FREE (Tuesdays only!)</span>
+  </div>
+  <div class="header-inner container">
+    <a class="brand" href="index.html">
+      <img src="assets/img/logo.jpg" alt="Bobby Burrito & Taco logo" class="brand-logo" />
+      <span class="brand-text">Bobby Burrito &amp; Taco</span>
     </a>
-
     <nav class="main-nav">
       <a href="index.html">Home</a>
-      <a href="menu.html">Menu & Prices</a>
+      <a href="menu.html">Menu</a>
       <a href="deals.html">Deals</a>
       <a href="gallery.html">Gallery</a>
       <a href="catering.html">Catering</a>
-      <a href="giftcards.html">Gift Cards</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="order.html" class="btn btn-small">Order Pickup</a>
       <a href="loyalty.html">Loyalty</a>
-      <a href="contact.html" class="active">Contact</a>
+      <a href="giftcards.html">Gift Cards</a>
     </nav>
-
-    <button class="menu-btn"><span></span><span></span><span></span></button>
   </div>
-
-  <nav class="mobile-nav">
-    <a href="index.html">Home</a>
-    <a href="menu.html">Menu & Prices</a>
-    <a href="deals.html">Deals</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="catering.html">Catering</a>
-    <a href="giftcards.html">Gift Cards</a>
-    <a href="loyalty.html">Loyalty</a>
-    <a href="contact.html" class="active">Contact</a>
-  </nav>
+  <a class="order-btn" href="https://order.toasttab.com/online/bobby-burrito" target="_blank">Order Online</a>
 </header>
 
-<main class="page-main">
+<main>
   <section class="page-hero">
     <div class="container">
-      <h1>Contact Us</h1>
-      <p>Feedback, questions or concerns? We respond within 24 hours.</p>
+      <h1>Contact, Feedback & Sign-Up</h1>
+      <p>Questions, catering requests or feedback – we’d love to hear from you.</p>
     </div>
   </section>
 
   <section class="section">
-    <div class="container narrow">
-      <h2>Send a Message</h2>
-
-      <form name="contact" method="POST" data-netlify="true">
-        <input type="hidden" name="form-name" value="contact" />
-
-        <label>Your Name</label>
-        <input type="text" name="name" required />
-
-        <label>Your Email</label>
+    <div class="container">
+      <h2 class="section-title">Join Our Email List</h2>
+      <p>Be the first to hear about new deals, limited-time specials and catering offers.</p>
+      <form name="email-signup" method="POST" data-netlify="true" class="catering-form">
+        <input type="hidden" name="form-name" value="email-signup" />
+        <label>Email address:</label>
         <input type="email" name="email" required />
-
-        <label>Your Phone</label>
-        <input type="text" name="phone" required />
-
-        <label>Your Message</label>
-        <textarea name="message" rows="5" required></textarea>
-
-        <button type="submit" class="btn btn-primary">Send Message</button>
+        <button type="submit">Sign Up</button>
       </form>
     </div>
   </section>
 
+  <section class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Catering Request</h2>
+      <p>Planning an office lunch, party or event? Tell us a bit about it and we’ll follow up.</p>
+      <form name="catering-request" method="POST" data-netlify="true" class="catering-form">
+        <input type="hidden" name="form-name" value="catering-request" />
+        <label>Name:</label>
+        <input type="text" name="name" required />
+
+        <label>Email:</label>
+        <input type="email" name="email" required />
+
+        <label>Phone number:</label>
+        <input type="tel" name="phone" required />
+
+        <label>Event date:</label>
+        <input type="date" name="date" required />
+
+        <label>Number of guests:</label>
+        <input type="number" name="guests" min="1" required />
+
+        <label>What are you interested in? (platters, taco kit, bowls, etc.)</label>
+        <textarea name="details" rows="4" required></textarea>
+
+        <button type="submit">Submit Catering Request</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Feedback & Questions</h2>
+      <p>Share your experience or ask us anything about the menu, allergens or catering.</p>
+      <form name="feedback" method="POST" data-netlify="true" class="catering-form">
+        <input type="hidden" name="form-name" value="feedback" />
+        <label>Name:</label>
+        <input type="text" name="name" />
+
+        <label>Email:</label>
+        <input type="email" name="email" required />
+
+        <label>Your message:</label>
+        <textarea name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Feedback</button>
+      </form>
+    </div>
+  </section>
 </main>
 
 <footer class="site-footer">
   <div class="container footer-grid">
-    <div><h4>Bobby Burrito & Taco</h4><p>3580 Tecumseh Rd E • Windsor, ON</p></div>
-    <div><h4>Hours</h4><p>Mon–Sat 11–9<br>Sun 11–8</p></div>
-    <div><h4>Follow Us</h4><p>@bobby_burrito_taco</p></div>
+    <div>
+      <h4>Bobby Burrito &amp; Taco</h4>
+      <p>3580 Tecumseh Rd E<br>Windsor, ON</p>
+      <p><strong>Phone:</strong> <a href="tel:15199158488">519-915-8488</a></p>
+    </div>
+    <div>
+      <h4>Hours</h4>
+      <p>Mon–Sat: 11:00 AM – 9:00 PM<br>Sun: 11:00 AM – 8:00 PM</p>
+    </div>
+    <div>
+      <h4>Follow us</h4>
+      <p><a href="https://www.instagram.com/bobby_burrito_taco" target="_blank" rel="noopener">@bobby_burrito_taco</a><br>
+         <a href="#">Bobby Burrito &amp; Taco on Facebook</a></p>
+    </div>
   </div>
-  <div class="footer-bottom">© 2025 Bobby Burrito & Taco</div>
+  <div class="footer-bottom">
+    <span>© 2025 Bobby Burrito &amp; Taco. All rights reserved.</span>
+  </div>
 </footer>
-
-<script src="assets/js/script.js" defer></script>
+<script src="assets/script.js"></script>
 </body>
 </html>
