@@ -1139,3 +1139,195 @@ textarea:focus {
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.15);
 }
+/* =========================
+   CHRISTMAS PREMIUM THEME
+========================= */
+body.christmas {
+  --xmas-red: #8b1e1e;
+  --xmas-green: #1f5a3b;
+  --xmas-gold: #c8a24a;
+}
+
+.xmas-topbar {
+  background: linear-gradient(90deg, rgba(139,30,30,.12), rgba(31,90,59,.12));
+  border-bottom: 1px solid rgba(0,0,0,.08);
+  padding: 10px 14px;
+  text-align: center;
+  font-weight: 600;
+}
+.xmas-topbar a { color: var(--xmas-red); text-decoration: underline; }
+
+/* Stronger readable footer (fix “too dark” issue on mobile) */
+.site-footer {
+  background: #171717 !important;
+  color: #f4f4f4 !important;
+}
+.site-footer a { color: #f4f4f4; text-decoration: underline; }
+.footer-bottom { opacity: .9; }
+
+/* Buttons */
+.btn-red {
+  display: inline-block;
+  background: var(--xmas-red, #8b1e1e);
+  color: #fff !important;
+  padding: 12px 16px;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 6px 16px rgba(139,30,30,.25);
+}
+.btn-red:hover { transform: translateY(-1px); }
+
+/* Deal carousel (homepage) */
+.deal-hero { padding: 28px 0; }
+.deal-hero-title { margin: 0; }
+.deal-hero-sub { margin: 6px 0 18px; opacity: .85; }
+
+.deal-carousel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+.deal-track {
+  display: flex;
+  transition: transform .45s ease;
+}
+
+.deal-slide {
+  position: relative;
+  min-width: 100%;
+  height: 260px;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+.deal-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: saturate(1.05);
+}
+.deal-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(0,0,0,.65), rgba(0,0,0,.15));
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 6px;
+}
+.deal-overlay h3 { margin: 0; font-size: 26px; }
+.deal-overlay p { margin: 0; opacity: .95; max-width: 520px; }
+.deal-cta { font-weight: 800; color: #fff; margin-top: 6px; }
+
+.deal-badge {
+  align-self: flex-start;
+  background: rgba(255,255,255,.16);
+  border: 1px solid rgba(255,255,255,.22);
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-weight: 800;
+  letter-spacing: .3px;
+}
+.badge-xmas {
+  background: rgba(139,30,30,.75);
+  border-color: rgba(255,255,255,.25);
+}
+
+/* Carousel nav */
+.deal-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.85);
+  font-size: 26px;
+  cursor: pointer;
+  z-index: 2;
+}
+.deal-nav.prev { left: 10px; }
+.deal-nav.next { right: 10px; }
+
+.deal-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 2;
+}
+.deal-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 99px;
+  border: 0;
+  background: rgba(255,255,255,.45);
+  cursor: pointer;
+}
+.deal-dot.active { background: rgba(255,255,255,.95); }
+
+/* Deals page layout */
+.deal-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 18px;
+}
+.deal-card {
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+}
+.deal-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+.deal-card-body { padding: 16px; }
+.deal-card-top { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
+.deal-tag {
+  background: rgba(0,0,0,.06);
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-weight: 800;
+}
+.deal-tag.small { font-weight: 700; opacity: .85; }
+.deal-list { margin: 10px 0 14px; padding-left: 18px; }
+
+@media (max-width: 900px) {
+  .deal-grid { grid-template-columns: 1fr; }
+  .deal-slide { height: 220px; }
+}
+
+/* =========================
+   MOBILE MENU FIX (CSS SIDE)
+========================= */
+@media (max-width: 900px) {
+  .main-nav {
+    position: fixed;
+    top: 64px;
+    right: 14px;
+    left: 14px;
+    background: #fff;
+    border-radius: 16px;
+    padding: 12px;
+    box-shadow: 0 20px 50px rgba(0,0,0,.18);
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 9999;
+  }
+  body.nav-open .main-nav { display: flex; }
+  .menu-btn { cursor: pointer; background: transparent; border: 0; }
+  .menu-btn span { display: block; width: 26px; height: 3px; background: #222; margin: 5px 0; border-radius: 3px; }
+}
