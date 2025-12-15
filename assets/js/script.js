@@ -1,18 +1,28 @@
-// MOBILE MENU
-const menuBtn=document.querySelector('.menu-btn');
-const nav=document.querySelector('.main-nav');
-if(menuBtn){
-  menuBtn.addEventListener('click',()=>nav.classList.toggle('open'));
-}
+document.addEventListener("DOMContentLoaded", function () {
 
-// HERO CAROUSEL
-const slides=document.querySelectorAll('.hero-carousel img');
-let idx=0;
-if(slides.length){
-  slides[0].classList.add('active');
-  setInterval(()=>{
-    slides[idx].classList.remove('active');
-    idx=(idx+1)%slides.length;
-    slides[idx].classList.add('active');
-  },4000);
-}
+  /* ===== Testimonial Carousel (Home page only) ===== */
+  const tCarousel = document.querySelector(".testimonial-carousel");
+  if (tCarousel) {
+    const track = tCarousel.querySelector(".testimonial-track");
+    const slides = Array.from(tCarousel.querySelectorAll(".testimonial-slide"));
+    const dots = Array.from(tCarousel.querySelectorAll(".testimonial-dot"));
+    let index = 0;
+
+    function goTo(i) {
+      if (!track || slides.length === 0) return;
+      index = (i + slides.length) % slides.length;
+      track.style.transform = `translateX(-${index * 100}%)`;
+      dots.forEach((dot, idx) =>
+        dot.classList.toggle("active", idx === index)
+      );
+    }
+
+    dots.forEach((dot, idx) => {
+      dot.addEventListener("click", () => goTo(idx));
+    });
+
+    goTo(0);
+    setInterval(() => goTo(index + 1), 6000);
+  }
+
+});
