@@ -1,107 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catering – Bobby Burrito &amp; Taco</title>
-  <meta name="description" content="Planning an event? We cater fresh Mexican food for parties, weddings, corporate events and more." />
-  <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8" />
+  <title>Catering – Bobby Burrito & Taco | Windsor, ON</title>
+
+  <meta name="keywords" content="Mexican catering Windsor, burrito platter Windsor, taco kit Windsor, Bobby Burrito catering">
+  <meta name="author" content="Bobby Burrito & Taco">
+  <link rel="canonical" href="https://www.bobbyburrito.ca/catering.html">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Catering in Windsor, ON. Burrito trays, taco kits, quesadilla platters, nacho platters and more. Request catering online.">
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-  <a href="#main-content" class="skip-link">Skip to content</a>
-  <div class="gift-banner">
-    Planning an event? We cater fresh Mexican food! <a href="#catering-form">Send Request →</a>
+<header class="site-header">
+  <div class="top-banner">
+    <span>🌮 Taco Tuesday: Buy 2 Tacos, Get 1 FREE (Tuesdays only!)</span>
   </div>
-  <header class="site-header" role="navigation">
-    <div class="header-inner">
-      <a class="brand" href="index.html">
-        <img src="https://bobbyburrito.ca/assets/images/logo.jpg" alt="Bobby Burrito Logo" class="brand-logo">
-        <span class="brand-text">Bobby Burrito &amp; Taco</span>
-      </a>
-      <nav class="main-nav" aria-label="Main menu">
-        <a href="index.html">Home</a>
-        <a href="menu.html">Menu &amp; Prices</a>
-        <a href="deals.html">Deals</a>
-        <a href="gallery.html">Gallery</a>
-        <a class="active" href="catering.html">Catering</a>
-        <a href="giftcards.html">Gift Cards</a>
-        <a href="loyalty.html">Loyalty</a>
-        <a class="nav-cta" href="order.html">Order Pickup</a>
-      </nav>
-      <button class="menu-btn" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+  <div class="header-inner container">
+    <a class="brand" href="index.html">
+      <img src="assets/img/logo.jpg" alt="Bobby Burrito & Taco logo" class="brand-logo" />
+      <span class="brand-text">Bobby Burrito &amp; Taco</span>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="deals.html">Deals</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="catering.html">Catering</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="order.html" class="btn btn-small">Order Pickup</a>
+      <a href="loyalty.html">Loyalty</a>
+      <a href="giftcards.html">Gift Cards</a>
+    </nav>
+  </div>
+  <a class="order-btn" href="https://order.toasttab.com/online/bobby-burrito" target="_blank">Order Online</a>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <h1>Catering &amp; platters</h1>
+      <a class="hero-order" href="https://order.toasttab.com/online/bobby-burrito" target="_blank">Order Now</a>
+      <p>Perfect for office lunches, family gatherings, school events and parties.</p>
     </div>
-  </header>
-  <main id="main-content" role="main" class="page-main">
-    <section class="page-hero">
-      <div class="container">
-        <h1>Catering</h1>
-        <p>Fresh Mexican catering for parties, weddings, corporate events &amp; more.</p>
+  </section>
+
+  <section class="section">
+    <div class="container info-grid">
+      <div>
+        <h2 class="section-title">Our catering style</h2>
+        <p>We build simple, flexible catering packages that make it easy to feed a crowd – from burrito trays to taco kits and nacho platters.</p>
+        <ul class="bullet-list">
+          <li>Burrito and burrito bowl trays</li>
+          <li>3-taco platters and family taco kits</li>
+          <li>Nacho bowls, chips &amp; dips and beef chilli platters</li>
+        </ul>
       </div>
-    </section>
-    <section class="section">
-      <div class="container catering-options" style="display: flex; gap: 2rem; flex-wrap: wrap;">
-        <div>
-          <h2>Perfect For Every Event</h2>
-          <ul class="bullet-list">
-            <li>Corporate lunches</li>
-            <li>Birthday parties</li>
-            <li>Weddings &amp; receptions</li>
-            <li>Family gatherings</li>
-            <li>Holiday celebrations</li>
-          </ul>
-        </div>
-        <div>
-          <h2>Why Choose Us?</h2>
-          <ul class="bullet-list">
-            <li>Fresh ingredients prepared daily</li>
-            <li>Veg, vegan &amp; premium protein options</li>
-            <li>Customizable catering trays</li>
-            <li>Affordable packages for all sizes</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container narrow">
-        <h2 id="catering-form">Catering Request Form</h2>
-        <p>Fill out the details and we’ll contact you within 24 hours.</p>
-        <form method="POST" name="catering" data-netlify="true">
-          <input type="hidden" name="form-name" value="catering">
-          <label for="name">Your Name</label>
-          <input id="name" type="text" name="name" required>
-          <label for="email">Your Email</label>
-          <input id="email" type="email" name="email" required>
-          <label for="phone">Your Phone</label>
-          <input id="phone" type="tel" name="phone" required>
-          <label for="event_date">Event Date</label>
-          <input id="event_date" type="date" name="event_date" required>
-          <label for="people">Number of People</label>
-          <input id="people" type="number" name="people" required>
-          <label for="message">Message / Details</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-          <button type="submit" class="btn btn-primary">Submit Catering Request</button>
+
+      <div>
+        <h3>Request catering</h3>
+        <p>Tell us about your event and we’ll follow up with options and pricing.</p>
+
+        <form name="catering" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="catering" />
+          <p><input type="text" name="name" placeholder="Your name" required></p>
+          <p><input type="tel" name="phone" placeholder="Phone number" required></p>
+          <p><input type="email" name="email" placeholder="Email address" required></p>
+          <p>
+            <select name="service" required>
+              <option value="">Pickup or delivery?</option>
+              <option value="pickup">Pickup</option>
+              <option value="delivery">Delivery (if available)</option>
+            </select>
+          </p>
+          <p><input type="text" name="date_time" placeholder="Event date & time" required></p>
+          <p><input type="number" name="people" placeholder="Number of people" min="1" required></p>
+          <p><textarea name="details" placeholder="What would you like to serve? (e.g., taco kit, burrito tray, nachos, drinks)" required></textarea></p>
+          <p><button type="submit" class="btn">Submit catering request</button></p>
         </form>
       </div>
-    </section>
-  </main>
-  <footer class="site-footer">
-    <div class="footer-grid">
-      <div>
-        <h4>Bobby Burrito &amp; Taco</h4>
-        <p>3580 Tecumseh Rd E<br>Windsor, ON</p>
-        <p><strong>Phone:</strong> <a href="tel:15199158488">519-915-8488</a></p>
-      </div>
-      <div>
-        <h4>Hours</h4>
-        <p>Mon–Sat: 11 AM – 9 PM<br>Sun: 11 AM – 8 PM</p>
-      </div>
-      <div>
-        <h4>Follow Us</h4>
-        <p><a href="https://www.instagram.com/bobby_burrito_taco" target="_blank">@bobby_burrito_taco</a><br><a href="#">Facebook</a></p>
-      </div>
     </div>
-    <div class="footer-bottom">© 2025 Bobby Burrito &amp; Taco — All rights reserved.</div>
-  </footer>
-  <script src="assets/js/script.js" defer></script>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Catering Platters</h2>
+      <table>
+        <tr><th>Platter</th><th>Description</th><th>Price</th></tr>
+        <tr><td>Burrito Platter</td><td>6 Regular Burritos</td><td>51.99</td></tr>
+        <tr><td>Quesadilla Platter</td><td>6 Quesadillas</td><td>54.99</td></tr>
+        <tr><td>Burrito Bowl Platter</td><td>6 Bowls</td><td>54.99</td></tr>
+        <tr><td>Taco Kit (Serve 4)</td><td>12 tortillas, protein, toppings</td><td>43.99</td></tr>
+        <tr><td>Beef Chili Platter</td><td>6 Regular Chili</td><td>15.99</td></tr>
+        <tr><td>Chips & Guac</td><td>6 bags chips + guac + pico</td><td>21.99</td></tr>
+        <tr><td>Chips & Salsa</td><td>6 bags chips + salsa</td><td>15.99</td></tr>
+        <tr><td>Chips & Queso</td><td>6 bags chips + queso + pico</td><td>20.99</td></tr>
+        <tr><td>Dessert Platter</td><td>6 Brownie + Churro mix</td><td>16.99</td></tr>
+      </table>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h4>Bobby Burrito &amp; Taco</h4>
+      <p>3580 Tecumseh Rd E<br>Windsor, ON</p>
+      <p><strong>Phone:</strong> <a href="tel:15199158488">519-915-8488</a></p>
+    </div>
+    <div>
+      <h4>Hours</h4>
+      <p>Mon–Sat: 11:00 AM – 9:00 PM<br>Sun: 11:00 AM – 8:00 PM</p>
+    </div>
+    <div>
+      <h4>Follow us</h4>
+      <p><a href="https://www.instagram.com/bobby_burrito_taco" target="_blank" rel="noopener">@bobby_burrito_taco</a><br>
+         <a href="#">Bobby Burrito &amp; Taco on Facebook</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Bobby Burrito &amp; Taco. All rights reserved.</span>
+  </div>
+</footer>
+<script src="assets/script.js"></script>
 </body>
 </html>
