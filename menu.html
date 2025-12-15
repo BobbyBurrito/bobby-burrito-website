@@ -1,75 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Menu & Prices – Bobby Burrito & Taco</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu &amp; Prices – Bobby Burrito &amp; Taco</title>
+  <meta name="description" content="View prices for burritos, bowls, tacos, quesadillas, nachos and more at Bobby Burrito & Taco." />
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
+  <a href="#main-content" class="skip-link">Skip to content</a>
   <div class="gift-banner">
-    🎁 Gift Cards Available — Perfect for holidays & celebrations!
-    <a href="giftcards.html">Buy Now →</a>
+    🎁 Gift Cards Available — Perfect for holidays & celebrations! <a href="giftcards.html">Buy Now →</a>
   </div>
-
-  <header class="site-header">
+  <header class="site-header" role="navigation">
     <div class="header-inner">
-      <a href="index.html" class="brand">
-        <img src="assets/images/logo.jpg" alt="Bobby Burrito Logo" class="brand-logo" />
-        <span class="brand-text">Bobby Burrito & Taco</span>
+      <a class="brand" href="index.html">
+        <img src="https://bobbyburrito.ca/assets/images/logo.jpg" alt="Bobby Burrito Logo" class="brand-logo">
+        <span class="brand-text">Bobby Burrito &amp; Taco</span>
       </a>
-
-      <nav class="main-nav">
+      <nav class="main-nav" aria-label="Main menu">
         <a href="index.html">Home</a>
-        <a href="menu.html" class="active">Menu & Prices</a>
+        <a class="active" href="menu.html">Menu &amp; Prices</a>
         <a href="deals.html">Deals</a>
         <a href="gallery.html">Gallery</a>
         <a href="catering.html">Catering</a>
         <a href="giftcards.html">Gift Cards</a>
         <a href="loyalty.html">Loyalty</a>
-        <a href="order.html" class="nav-cta">Order Pickup</a>
+        <a class="nav-cta" href="order.html">Order Pickup</a>
       </nav>
-
-      <button class="menu-btn" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
-      </button>
+      <button class="menu-btn" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
-
-    <nav class="mobile-nav">
-      <a href="index.html">Home</a>
-      <a href="menu.html" class="active">Menu & Prices</a>
-      <a href="deals.html">Deals</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="catering.html">Catering</a>
-      <a href="giftcards.html">Gift Cards</a>
-      <a href="loyalty.html">Loyalty</a>
-      <a href="order.html" class="nav-cta">Order Pickup</a>
-    </nav>
   </header>
-
-  <main class="page-main">
+  <main id="main-content" role="main" class="page-main">
     <section class="page-hero">
       <div class="container">
-        <h1>Menu & Prices</h1>
-        <p>Build-your-own burritos, bowls, tacos, quesadillas, nachos & more.</p>
-        <p class="note">
-          <strong>Protein add-ons are extra charge</strong> and apply to all items.
-        </p>
-        <a href="https://order.toasttab.com/online/bobby-burrito" target="_blank" class="btn btn-primary">
-          Order on Toast →
-        </a>
+        <h1>Menu &amp; Prices</h1>
+        <p>Build-your-own burritos, bowls, tacos, quesadillas, nachos &amp; more.</p>
+        <p class="note"><strong>Protein add-ons are extra charge</strong> and apply to all items.</p>
+        <a href="https://order.toasttab.com/online/bobby-burrito" target="_blank" class="btn btn-primary">Order on Toast →</a>
       </div>
     </section>
-
-    <!-- MAIN MENU GRID -->
     <section class="section">
       <div class="container menu-grid">
-
-        <!-- Burritos -->
         <article class="menu-section" id="burritos">
           <h2>Burritos</h2>
-          <p>Warm tortilla filled with rice, beans, toppings & your choice of protein.</p>
+          <p>Warm tortilla filled with rice, beans, toppings &amp; your choice of protein.</p>
           <ul class="price-list">
             <li><span>Regular</span><span>$8.99</span></li>
             <li><span>Large</span><span>$11.59</span></li>
@@ -81,12 +56,8 @@
             <strong>Vegan:</strong> Vegan Protein<br>
             <strong>Exclusive Premium:</strong> Steak, Barbacoa, Shrimp
           </div>
-          <a href="https://order.toasttab.com/online/bobby-burrito" target="_blank" class="btn btn-outline btn-small">
-            Order Burrito on Toast →
-          </a>
+          <a href="https://order.toasttab.com/online/bobby-burrito" target="_blank" class="btn btn-outline btn-small">Order Burrito on Toast →</a>
         </article>
-
-        <!-- Bowls -->
         <article class="menu-section" id="bowls">
           <h2>Burrito Bowls</h2>
           <p>All the burrito flavour served in a bowl — no tortilla.</p>
@@ -94,15 +65,9 @@
             <li><span>Regular</span><span>$9.29</span></li>
             <li><span>Large</span><span>$10.29</span></li>
           </ul>
-          <div class="protein-tags">
-            Same protein options as burritos.
-          </div>
-          <a href="https://order.toasttab.com/online/bobby-burrito" target="_blank" class="btn btn-outline btn-small">
-            Order Bowl on Toast →
-          </a>
+          <div class="protein-tags">Same protein options as burritos.</div>
+          <a href="https://order.toasttab.com/online/bobby-burrito" target="_blank" class="btn btn-outline btn-small">Order Bowl on Toast →</a>
         </article>
-
-        <!-- Quesadillas -->
         <article class="menu-section" id="quesadillas">
           <h2>Quesadillas</h2>
           <p>Cheese-filled tortillas grilled golden, served with salsa &amp; sour cream.</p>
@@ -110,15 +75,9 @@
             <li><span>Regular</span><span>$9.99</span></li>
             <li><span>Large</span><span>$10.99</span></li>
           </ul>
-          <div class="protein-tags">
-            Any standard or veg protein. Premium proteins extra.
-          </div>
-          <a href="https://order.toasttab.com/online/bobby-burrito" target="_blank" class="btn btn-outline btn-small">
-            Order Quesadilla on Toast →
-          </a>
+          <div class="protein-tags">Any standard or veg protein. Premium proteins extra.</div>
+          <a href="https://order.toasttab.com/online/bobby-burrito" target="_blank" class="btn btn-outline btn-small">Order Quesadilla on Toast →</a>
         </article>
-
-        <!-- Tacos -->
         <article class="menu-section" id="tacos">
           <h2>Tacos</h2>
           <p>Soft or hard shell with fresh toppings and your choice of protein.</p>
@@ -126,38 +85,26 @@
             <li><span>1 Taco</span><span>$3.99</span></li>
             <li><span>3-Taco Combo</span><span>$10.99</span></li>
           </ul>
-          <p class="small-note">Mix & match proteins. Premium proteins extra.</p>
-          <a href="https://order.toasttab.com/online/bobby-burrito" target="_blank" class="btn btn-outline btn-small">
-            Order Tacos on Toast →
-          </a>
+          <p class="small-note">Mix &amp; match proteins. Premium proteins extra.</p>
+          <a href="https://order.toasttab.com/online/bobby-burrito" target="_blank" class="btn btn-outline btn-small">Order Tacos on Toast →</a>
         </article>
-
-        <!-- Salad -->
         <article class="menu-section" id="salad">
           <h2>Mexican Salad</h2>
           <p>Crisp greens, veggies, salsa, cheese &amp; dressing with your choice of protein.</p>
           <ul class="price-list">
             <li><span>Mexican Salad</span><span>$8.99</span></li>
           </ul>
-          <a href="https://order.toasttab.com/online/bobby-burrito" target="_blank" class="btn btn-outline btn-small">
-            Order Salad on Toast →
-          </a>
+          <a href="https://order.toasttab.com/online/bobby-burrito" target="_blank" class="btn btn-outline btn-small">Order Salad on Toast →</a>
         </article>
-
-        <!-- Nachos -->
         <article class="menu-section" id="nachos">
           <h2>Nacho Bowl</h2>
           <p>Crisp tortilla chips loaded with queso, salsa, guac &amp; toppings.</p>
           <ul class="price-list">
             <li><span>Nacho Bowl</span><span>$11.49</span></li>
           </ul>
-          <a href="https://order.toasttab.com/online/bobby-burrito" target="_blank" class="btn btn-outline btn-small">
-            Order Nacho Bowl on Toast →
-          </a>
+          <a href="https://order.toasttab.com/online/bobby-burrito" target="_blank" class="btn btn-outline btn-small">Order Nacho Bowl on Toast →</a>
         </article>
-
-        <!-- Beef Chili -->
-        <article class="menu-section" id="sides">
+        <article class="menu-section" id="chili">
           <h2>Beef Chili</h2>
           <p>Rich, hearty beef chili — perfect on its own or as a side.</p>
           <ul class="price-list">
@@ -165,8 +112,6 @@
             <li><span>Large</span><span>$3.99</span></li>
           </ul>
         </article>
-
-        <!-- Dessert -->
         <article class="menu-section" id="dessert">
           <h2>Dessert</h2>
           <ul class="price-list">
@@ -174,56 +119,27 @@
             <li><span>Churros</span><span>$2.99</span></li>
           </ul>
         </article>
-
-        <!-- Chips & Dips -->
-        <article class="menu-section" id="chips">
-          <h2>Chips & Dips</h2>
-          <ul class="price-list">
-            <li><span>Chips &amp; Queso</span><span>$3.49</span></li>
-            <li><span>Chips &amp; Salsa</span><span>$2.99</span></li>
-            <li><span>Chips &amp; Guac</span><span>$3.99</span></li>
-          </ul>
-        </article>
-
-      </div>
-    </section>
-
-    <section class="section-alt">
-      <div class="container centered">
-        <p class="note">
-          Premium proteins & extra proteins are an additional charge on all items.
-        </p>
-        <a href="https://order.toasttab.com/online/bobby-burrito" target="_blank" class="btn btn-primary">
-          Start Your Order on Toast →
-        </a>
       </div>
     </section>
   </main>
-
   <footer class="site-footer">
-    <div class="container footer-grid">
+    <div class="footer-grid">
       <div>
-        <h4>Bobby Burrito & Taco</h4>
+        <h4>Bobby Burrito &amp; Taco</h4>
         <p>3580 Tecumseh Rd E<br>Windsor, ON</p>
         <p><strong>Phone:</strong> <a href="tel:15199158488">519-915-8488</a></p>
       </div>
       <div>
         <h4>Hours</h4>
-        <p>Mon–Sat: 11 AM – 9 PM<br>Sun: 11 AM – 8 PM</p>
+        <p>Mon–Sat: 11 AM – 9 PM<br>Sun: 11 AM – 8 PM</p>
       </div>
       <div>
         <h4>Follow Us</h4>
-        <p>
-          <a href="https://www.instagram.com/bobby_burrito_taco" target="_blank">@bobby_burrito_taco</a><br />
-          <a href="#">Facebook</a>
-        </p>
+        <p><a href="https://www.instagram.com/bobby_burrito_taco" target="_blank">@bobby_burrito_taco</a><br><a href="#">Facebook</a></p>
       </div>
     </div>
-    <div class="footer-bottom">
-      © 2025 Bobby Burrito & Taco — All rights reserved.
-    </div>
+    <div class="footer-bottom">© 2025 Bobby Burrito &amp; Taco — All rights reserved.</div>
   </footer>
-
   <script src="assets/js/script.js" defer></script>
 </body>
 </html>
