@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Deals – Bobby Burrito & Taco</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css" />
   <script defer src="assets/js/script.js"></script>
 </head>
 
-<body>
+<body class="christmas">
 
-<!-- HEADER -->
+<!-- OPTIONAL TOP BANNER -->
+<div class="xmas-topbar">
+  🎄 Christmas Specials Live Now — Limited Time Only!
+  <a href="deals.html#christmas-10">See Deals →</a>
+</div>
+
 <header class="site-header">
   <div class="header-inner">
     <div class="brand">
-      <img src="assets/images/logo.jpg" alt="Bobby Burrito Logo" class="brand-logo">
+      <img src="assets/images/logo.jpg" alt="Logo" class="brand-logo">
       <span class="brand-text">Bobby Burrito & Taco</span>
     </div>
 
     <nav class="main-nav">
       <a href="index.html">Home</a>
       <a href="menu.html">Menu & Prices</a>
-      <a href="deals.html" class="active">Deals</a>
+      <a class="active" href="deals.html">Deals</a>
       <a href="gallery.html">Gallery</a>
       <a href="catering.html">Catering</a>
       <a href="giftcards.html">Gift Cards</a>
@@ -29,54 +34,80 @@
       <a href="order.html" class="full-menu-link">Order Pickup</a>
     </nav>
 
-    <div class="menu-btn"><div></div><div></div><div></div></div>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
 
-<!-- MAIN CONTENT -->
-<section class="section deals-section">
+<main class="section">
   <div class="container">
-    <h1 class="section-title">Current Deals</h1>
+    <h1 class="section-title">Deals</h1>
+    <p class="section-subtext">Tap a deal to order faster on Toast.</p>
 
-    <div class="deals-container">
+    <div class="deal-grid">
 
-      <!-- ⭐ TACO TUESDAY DEAL -->
-      <div class="deal-card">
-        <img src="assets/images/taco-3.jpg" alt="Taco Tuesday Deal">
-
-        <div class="deal-content">
-          <h2>Taco Tuesday </h2>
-          <p class="deal-subtext">Offer available only on Tuesdays. Mix & match shells and proteins.</p>
-
-          <a href="https://order.toasttab.com/online/bobby-burrito"
-             target="_blank"
-             class="btn-red">
-            Order Taco Tuesday →
-          </a>
+      <!-- 1) Taco Tuesday -->
+      <article id="taco-tuesday" class="deal-card">
+        <img src="assets/images/deal-taco.jpg" alt="Taco Tuesday deal">
+        <div class="deal-card-body">
+          <div class="deal-card-top">
+            <span class="deal-tag">Weekly</span>
+            <span class="deal-tag small">Only Tuesdays</span>
+          </div>
+          <h2>Taco Tuesday</h2>
+          <p>Offer available only on Tuesdays.</p>
+          <a class="btn-red" target="_blank" href="https://order.toasttab.com/online/bobby-burrito">Order on Toast →</a>
         </div>
-      </div>
+      </article>
 
-      <!-- ⭐ REGULAR BURRITO DEAL -->
-      <div class="deal-card">
-        <img src="assets/images/burrito.jpg" alt="Regular Burrito">
-
-        <div class="deal-content">
-          <h2>Regular Burrito – $7.99</h2>
-          <p class="deal-subtext">Add-ons are extra.</p>
-
-          <a href="https://order.toasttab.com/online/bobby-burrito"
-             target="_blank"
-             class="btn-red">
-            Order Burrito →
-          </a>
+      <!-- 2) Regular Burrito $7.99 -->
+      <article id="burrito-799" class="deal-card">
+        <img src="assets/images/deal-burrito.jpg" alt="Regular burrito $7.99">
+        <div class="deal-card-body">
+          <div class="deal-card-top">
+            <span class="deal-tag">Everyday</span>
+            <span class="deal-tag small">Add-ons extra</span>
+          </div>
+          <h2>Regular Burrito $7.99</h2>
+          <p>Great value. Add-ons and premium proteins are extra.</p>
+          <a class="btn-red" target="_blank" href="https://order.toasttab.com/online/bobby-burrito">Order on Toast →</a>
         </div>
-      </div>
+      </article>
+
+      <!-- 3) Christmas 10% OFF -->
+      <article id="christmas-10" class="deal-card xmas">
+        <img src="assets/images/deal-10off.jpg" alt="Christmas 10% off">
+        <div class="deal-card-body">
+          <div class="deal-card-top">
+            <span class="deal-tag badge-xmas">Christmas Deal</span>
+          </div>
+          <h2>10% OFF Entire Bill</h2>
+          <p>Holiday special — get 10% discount on your entire bill/check.</p>
+          <a class="btn-red" target="_blank" href="https://order.toasttab.com/online/bobby-burrito">Order on Toast →</a>
+        </div>
+      </article>
+
+      <!-- 4) Gift Card Bonus -->
+      <article id="giftcard-bonus" class="deal-card xmas">
+        <img src="assets/images/deal-giftcard.jpg" alt="Gift card bonus">
+        <div class="deal-card-body">
+          <div class="deal-card-top">
+            <span class="deal-tag badge-xmas">Christmas Deal</span>
+          </div>
+          <h2>Gift Card Bonus</h2>
+          <ul class="deal-list">
+            <li>Buy <strong>$60</strong> gift card → get <strong>$10</strong> gift voucher</li>
+            <li>Buy <strong>$100</strong> gift card → get <strong>$20</strong> gift voucher</li>
+          </ul>
+          <a class="btn-red" target="_blank" href="https://order.toasttab.com/online/bobby-burrito">Buy / Order on Toast →</a>
+        </div>
+      </article>
 
     </div>
   </div>
-</section>
+</main>
 
-<!-- FOOTER -->
 <footer class="site-footer">
   <div class="container footer-grid">
     <div>
@@ -84,12 +115,10 @@
       <p>3580 Tecumseh Rd E<br>Windsor, ON</p>
       <p><strong>Phone:</strong> <a href="tel:15199158488">519-915-8488</a></p>
     </div>
-
     <div>
       <h4>Hours</h4>
       <p>Mon–Sat: 11 AM – 9 PM<br>Sun: 11 AM – 8 PM</p>
     </div>
-
     <div>
       <h4>Follow Us</h4>
       <p>
@@ -98,10 +127,7 @@
       </p>
     </div>
   </div>
-
-  <div class="footer-bottom">
-    © 2025 Bobby Burrito & Taco — All rights reserved.
-  </div>
+  <div class="footer-bottom">© 2025 Bobby Burrito & Taco — All rights reserved.</div>
 </footer>
 
 </body>
