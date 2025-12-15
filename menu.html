@@ -1,32 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Menu & Prices | Bobby Burrito Windsor</title>
-<meta name="description" content="Full menu & prices. Burritos, tacos, bowls, nachos, vegan & vegetarian options in Windsor.">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="assets/css/style.css">
-<script defer src="assets/js/script.js"></script>
+  <meta charset="UTF-8">
+  <title>Menu & Prices – Bobby Burrito & Taco | Windsor, ON</title>
+
+  <meta name="description" content="View the full menu and prices for Bobby Burrito & Taco in Windsor. Burritos, tacos, bowls, quesadillas, nachos, sides and drinks.">
+  <meta name="keywords" content="Bobby Burrito menu, Mexican food Windsor prices, burritos Windsor">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="canonical" href="https://www.bobbyburrito.ca/menu.html">
+  <link rel="stylesheet" href="assets/style.css">
 </head>
+
 <body>
 
-<header class="site-header">...</header>
+<header class="site-header">
+  <h1>Menu & Prices</h1>
+  <p class="subtitle">Fresh, made-to-order Mexican favourites</p>
+</header>
 
 <section class="section">
-<div class="container">
-<h2 class="section-title">Menu & Prices</h2>
+  <div class="container menu-page">
 
-<div class="card"><h3>Burrito</h3><p>Regular $8.99 • Large $11.59 • XL $13.59</p><small>Add-ons extra</small></div>
-<div class="card"><h3>Burrito Bowl</h3><p>Regular $9.29 • Large $10.29</p></div>
-<div class="card"><h3>Quesadilla</h3><p>Regular $9.99 • Large $10.99</p></div>
-<div class="card"><h3>Tacos</h3><p>3 for $10.99 • Single $3.99</p></div>
-<div class="card"><h3>Nacho Bowl</h3><p>$11.49</p></div>
-<div class="card"><h3>Desserts</h3><p>Brownie $3.49 • Churros $2.99</p></div>
+    <!-- BURRITOS -->
+    <div class="menu-category" id="burritos">
+      <h2>Burritos 🌯</h2>
+      <p class="menu-desc">Includes rice, beans, toppings & salsa</p>
+      <ul class="price-list">
+        <li><strong>Regular</strong> – $9.29</li>
+        <li><strong>Large</strong> – $9.29 + $2.69</li>
+        <li><strong>Extra Large</strong> – $9.29 + $4.68</li>
+        <li>Upgrade proteins – +$0.69</li>
+        <li>Extra protein – +$3.99</li>
+      </ul>
+      <p class="small-note">Proteins: Chicken, Ground Beef, Al Pastor, Chorizo, Butter Chicken, Falafel, Veggie</p>
+    </div>
 
-<a href="https://order.toasttab.com/online/bobby-burrito" class="btn btn-red">Order on Toast</a>
-</div>
+    <!-- BOWLS -->
+    <div class="menu-category" id="bowls">
+      <h2>Burrito Bowls 🥗</h2>
+      <ul class="price-list">
+        <li><strong>Regular</strong> – $9.99</li>
+        <li><strong>Large</strong> – +$2.39</li>
+        <li>Extra protein – +$3.99</li>
+      </ul>
+    </div>
+
+    <!-- QUESADILLAS -->
+    <div class="menu-category" id="quesadillas">
+      <h2>Quesadillas 🧀</h2>
+      <ul class="price-list">
+        <li><strong>Regular</strong> – $10.39</li>
+        <li><strong>Large</strong> – +$1.99</li>
+        <li>Extra protein – +$3.99</li>
+      </ul>
+    </div>
+
+    <!-- TACOS -->
+    <div class="menu-category" id="tacos">
+      <h2>3-Taco 🌮</h2>
+      <ul class="price-list">
+        <li>Protein – $11.99</li>
+        <li>Vegetarian – $11.59</li>
+        <li>Vegan – $11.99</li>
+      </ul>
+      <p class="small-note">Soft or crispy shells available</p>
+    </div>
+
+    <!-- SALADS -->
+    <div class="menu-category" id="salads">
+      <h2>Salads 🥬</h2>
+      <ul class="price-list">
+        <li>Protein – $10.59</li>
+        <li>Vegetarian – $8.99</li>
+        <li>Vegan – $10.59</li>
+      </ul>
+    </div>
+
+    <!-- NACHOS -->
+    <div class="menu-category" id="nachos">
+      <h2>Nacho Bowl 🔥</h2>
+      <ul class="price-list">
+        <li>Protein – $12.39</li>
+        <li>Vegetarian – $11.99</li>
+        <li>Vegan – $12.39</li>
+        <li>Extra protein – +$3.99</li>
+      </ul>
+    </div>
+
+    <!-- SIDES -->
+    <div class="menu-category" id="sides">
+      <h2>Sides</h2>
+      <ul class="price-list">
+        <li>Bag of chips – $1.99</li>
+        <li>Chips & Salsa – $2.99</li>
+        <li>Chips & Queso – $3.49</li>
+        <li>Chips & Guac – $3.99</li>
+        <li>Beef Chili – $4.99</li>
+        <li>Beef Chili Platter (6 regular) – $15.99</li>
+      </ul>
+    </div>
+
+    <!-- DESSERTS -->
+    <div class="menu-category" id="desserts">
+      <h2>Desserts</h2>
+      <ul class="price-list">
+        <li>Brownie – $2.99</li>
+        <li>Churro – $2.99</li>
+      </ul>
+    </div>
+
+    <!-- DRINKS -->
+    <div class="menu-category" id="drinks">
+      <h2>Drinks</h2>
+      <ul class="price-list">
+        <li>Can / Fountain Pop – $1.99</li>
+        <li>Bottled Pop / Jarritos – $2.99</li>
+        <li>Pure Leaf Iced Tea – $3.59</li>
+      </ul>
+    </div>
+
+  </div>
 </section>
 
-<footer class="site-footer">...</footer>
+<section class="section section-alt">
+  <div class="container center">
+    <a href="https://order.toasttab.com/online/bobby-burrito" target="_blank" class="btn btn-large">
+      Order Pickup Online
+    </a>
+  </div>
+</section>
+
 </body>
 </html>
