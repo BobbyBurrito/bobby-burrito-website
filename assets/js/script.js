@@ -1,116 +1,70 @@
-// Bobby Burrito & Taco – Frontend JS
-
-document.addEventListener("DOMContentLoaded", () => {
-  setupMobileNav();
-  setupHeroCarousel();
-  setupBigTestimonialCarousel();
-  setupGalleryModal();
-});
-
-/* -----------------------------
-   MOBILE NAV
------------------------------ */
-function setupMobileNav() {
+(function () {
+  // -----------------------------
+  // MOBILE NAV (hamburger)
+  // -----------------------------
   const menuBtn = document.querySelector(".menu-btn");
   const nav = document.querySelector(".main-nav");
-  if (!menuBtn || !nav) return;
 
-  menuBtn.addEventListener("click", () => {
-    menuBtn.classList.toggle("active");
-    nav.classList.toggle("nav-open");
-  });
-
-  // close on link click
-  nav.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      menuBtn.classList.remove("active");
-      nav.classList.remove("nav-open");
+  if (menuBtn && nav) {
+    menuBtn.addEventListener("click", () => {
+      const open = document.body.classList.toggle("nav-open");
+      menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
     });
-  });
-}
 
-/* -----------------------------
-   HERO TOP CAROUSEL (3 slides)
------------------------------ */
-function setupHeroCarousel() {
-  const slides = document.querySelectorAll(".hero-carousel-slide");
-  const dots = document.querySelectorAll(".hero-carousel-dots .dot");
-  if (!slides.length) return;
+    // Close nav when clicking a link
+    nav.querySelectorAll("a").forEach(a => {
+      a.addEventListener("click", () => {
+        document.body.classList.remove("nav-open");
+        menuBtn.setAttribute("aria-expanded", "false");
+      });
+    });
 
-  let index = 0;
-
-  function showSlide(i) {
-    slides.forEach((s, idx) => s.classList.toggle("active", idx === i));
-    dots.forEach((d, idx) => d.classList.toggle("active", idx === i));
+    // Close nav when clicking outside
+    document.addEventListener("click", (e) => {
+      if (!document.body.classList.contains("nav-open")) return;
+      const clickedInside = nav.contains(e.target) || menuBtn.contains(e.target);
+      if (!clickedInside) {
+        document.body.classList.remove("nav-open");
+        menuBtn.setAttribute("aria-expanded", "false");
+      }
+    });
   }
 
-  dots.forEach((dot, i) =>
-    dot.addEventListener("click", () => {
-      index = i;
-      showSlide(index);
-    })
-  );
+  // -----------------------------
+  // DEALS CAROUSEL (homepage)
+  // -----------------------------
+  const carousel = document.querySelector('[data-carousel="deals"]');
+  if (carousel) {
+    const track = carousel.querySelector(".deal-track");
+    const slides = Array.from(carousel.querySelectorAll(".deal-slide"));
+    const dots = Array.from(carousel.querySelectorAll(".deal-dot"));
+    const prev = carousel.querySelector(".deal-nav.prev");
+    const next = carousel.querySelector(".deal-nav.next");
 
-  setInterval(() => {
-    index = (index + 1) % slides.length;
-    showSlide(index);
-  }, 5000);
+    let index = 0;
+    let timer = null;
 
-  showSlide(index);
-}
+    const goTo = (i) => {
+      index = (i + slides.length) % slides.length;
+      track.style.transform = `translateX(-${index * 100}%)`;
+      dots.forEach((d, di) => d.classList.toggle("active", di === index));
+    };
 
-/* -----------------------------
-   BIG TESTIMONIAL CAROUSEL
------------------------------ */
-function setupBigTestimonialCarousel() {
-  const track = document.querySelector(".testimonial-track");
-  const slides = document.querySelectorAll(".testimonial-slide");
-  const dots = document.querySelectorAll(".testimonial-dot");
+    const start = () => {
+      stop();
+      timer = setInterval(() => goTo(index + 1), 4500);
+    };
+    const stop = () => timer && clearInterval(timer);
 
-  if (!track || !slides.length) return;
+    prev && prev.addEventListener("click", () => { goTo(index - 1); start(); });
+    next && next.addEventListener("click", () => { goTo(index + 1); start(); });
 
-  let index = 0;
+    dots.forEach((d, di) => d.addEventListener("click", () => { goTo(di); start(); }));
 
-  function goTo(i) {
-    index = (i + slides.length) % slides.length;
-    const offset = -index * 100;
-    track.style.transform = `translateX(${offset}%)`;
-    dots.forEach((d, idx) => d.classList.toggle("active", idx === index));
+    carousel.addEventListener("mouseenter", stop);
+    carousel.addEventListener("mouseleave", start);
+
+    goTo(0);
+    start();
   }
-
-  dots.forEach((dot, i) =>
-    dot.addEventListener("click", () => goTo(i))
-  );
-
-  setInterval(() => goTo(index + 1), 7000);
-  goTo(0);
-}
-
-/* -----------------------------
-   GALLERY MODAL VIEWER
------------------------------ */
-function setupGalleryModal() {
-  const imgs = document.querySelectorAll(".gallery-img");
-  const modal = document.getElementById("imgModal");
-  const modalImg = document.getElementById("modalImg");
-  const closeBtn = document.querySelector(".img-close");
-
-  if (!imgs.length || !modal || !modalImg || !closeBtn) return;
-
-  imgs.forEach((img) => {
-    img.addEventListener("click", () => {
-      modalImg.src = img.src;
-      modal.classList.add("open");
-    });
-  });
-
-  closeBtn.addEventListener("click", () => {
-    modal.classList.remove("open");
-  });
-
-  modal.addEventListener("click", (e) => {
-    if (e.target === modal) {
-      modal.classList.remove("open");
-    }
-  });
-}
+})();
