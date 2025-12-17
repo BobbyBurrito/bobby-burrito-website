@@ -401,3 +401,119 @@ form textarea{ min-height:110px; resize:vertical; }
   .luxe-menu-grid{ grid-template-columns: 1fr; }
   .menu-price, .note-row .menu-note-price{ min-width: 82px; }
 }
+/* ===== Product Carousel (Homepage) ===== */
+.carousel-head{
+  display:flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+.product-carousel{
+  position: relative;
+  background: #fff;
+  border-radius: 22px;
+  padding: 14px;
+  box-shadow: 0 14px 40px rgba(0,0,0,0.08);
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.carousel-viewport{
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.carousel-track{
+  display: flex;
+  gap: 12px;
+  transition: transform 0.45s ease;
+  will-change: transform;
+}
+
+.carousel-slide{
+  position: relative;
+  flex: 0 0 calc(25% - 9px);
+  border-radius: 18px;
+  overflow: hidden;
+  background: #111;
+}
+
+.carousel-slide img{
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  filter: brightness(0.92);
+  transform: scale(1);
+  transition: transform 0.35s ease, filter 0.35s ease;
+}
+
+.carousel-slide:hover img{
+  transform: scale(1.04);
+  filter: brightness(0.85);
+}
+
+.slide-label{
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 0.9rem;
+  border: 1px solid rgba(255,255,255,0.18);
+}
+
+.carousel-btn{
+  position:absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,0.12);
+  background: rgba(255,255,255,0.92);
+  font-size: 26px;
+  font-weight: 900;
+  cursor: pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow: 0 10px 26px rgba(0,0,0,0.12);
+}
+
+.carousel-btn.prev{ left: 10px; }
+.carousel-btn.next{ right: 10px; }
+
+.carousel-dots{
+  display:flex;
+  justify-content:center;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.carousel-dot{
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: #777;
+  border: none;
+  cursor: pointer;
+}
+.carousel-dot.active{
+  background: #ffcc33;
+}
+
+@media (max-width: 980px){
+  .carousel-slide{ flex: 0 0 calc(33.333% - 8px); }
+  .carousel-slide img{ height: 200px; }
+}
+
+@media (max-width: 640px){
+  .carousel-head{ align-items:flex-start; }
+  .carousel-slide{ flex: 0 0 calc(75% - 6px); }
+  .carousel-slide img{ height: 210px; }
+  .carousel-btn{ display:none; } /* swipe on mobile */
+}
